@@ -1,5 +1,5 @@
 gametitle=SFOS Review Code Mar 6 2004
-comment=YukiXXL
+comment=Basic fixes
 
 //Dongle protection bypass
 patch=1,EE,0041D418,byte,0
