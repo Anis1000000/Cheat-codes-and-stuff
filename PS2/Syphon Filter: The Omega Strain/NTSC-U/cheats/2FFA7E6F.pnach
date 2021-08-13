@@ -1,29 +1,29 @@
 gametitle=Jampack Demo
 comment=by YukiXXL
 
-//E3_BUILD=1
-//patch=1,EE,20771F33,byte,31
+//E3_BUILD=1 (PS2-20771EF0 313D444C)
+//patch=1,EE,20771EF3,byte,31
 
-//BOOT_FRONTEND=1
-//patch=1,EE,207720E9,byte,31
+//BOOT_FRONTEND=1 (PS2-107720A8 0A0D313D)
+patch=1,EE,207720A9,byte,31
 
 //BOOT_INVULNERABLE=1
-patch=1,EE,20772110,byte,31
+patch=1,EE,207720D0,byte,31
 
 //USE_VALID_LEVELS=1
-//patch=1,EE,20771FFC,byte,31
+//patch=1,EE,20771FBC,byte,31
 
 //SEQUENTIAL_LEVELS=1
-//patch=1,EE,20771F48,byte,31
+//patch=1,EE,20771F08,byte,31
 
 //RESTRICT_LEVELS=1
-//patch=1,EE,20771F5B,byte,31
-
-//debug=1
-//patch=1,EE,203B711E,byte,31
+//patch=1,EE,20771F1B,byte,31
 
 //LAN
 patch=1,EE,20316038,word,8C2408C0
+
+//debug=1
+//patch=1,EE,203B711E,byte,31
 
 //Greyed buttons
 patch=1,EE,203139F0,word,8c240848
@@ -53,7 +53,7 @@ patch=1,EE,203CB2A4,word,444F4D54
 patch=1,EE,2032FB90,word,00000000
 
 //Quickchat
-patch=1,EE,202CAB20,word,00000000
+patch=1,EE,202CAB1C,word,902301C0
 
 //Buddy climb
-patch=1,EE,20229BC8,word,00000000
+patch=1,EE,20229BC4,word,902301C0
