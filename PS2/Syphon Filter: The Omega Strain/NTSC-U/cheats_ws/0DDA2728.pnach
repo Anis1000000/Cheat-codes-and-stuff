@@ -1,0 +1,22 @@
+//Flashlight and NV Fix
+patch=0,EE,0038E8E8,word,48438000
+patch=0,EE,0036CC9C,word,4B06521B
+
+//Offline enable
+patch=1,EE,0048B930,word,00000000
+
+//gameplay
+patch=1,EE,003907d0,word,3c043f40
+patch=1,EE,003907d4,word,44841800
+patch=1,EE,003907d8,word,46030003
+patch=1,EE,003907dc,word,460318c3
+patch=1,EE,003907e0,word,46031840
+patch=1,EE,00390854,word,e603007c
+
+//HUD fix
+//patch=1,EE,0039068c,word,00000000
+//patch=1,EE,00390694,word,3C033f40
+
+//FMV's fix
+//patch=1,EE,004123fc,word,241016d0
+//patch=1,EE,00412404,word,24127490
