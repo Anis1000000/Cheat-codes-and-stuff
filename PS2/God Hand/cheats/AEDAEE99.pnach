@@ -1,0 +1,4 @@
+gametitle=God Hand
+comment=Fan Service
+//Both God Hands
+patch=1,EE,00567C7E,byte,1
