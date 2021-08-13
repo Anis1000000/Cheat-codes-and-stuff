@@ -1,0 +1,21 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1
+comment=Basic fixes
+
+//NV and Flashlight Fix
+patch=0,EE,00367798,word,48438000
+patch=0,EE,0036779C,word,4B06521B
+
+//Offline button (gONLINE_ONLY)
+patch=1,EE,00453938,byte,0
+
+//gameplay
+patch=1,EE,00369510,word,3C043F40
+patch=1,EE,00369514,word,44841800
+patch=1,EE,00369518,word,46030003
+patch=1,EE,0036951C,word,460318C3
+patch=1,EE,00369520,word,46031840
+patch=1,EE,00369594,word,E603007C
+
+//HUD fix
+//patch=1,EE,003693CC,word,00000000
+//patch=1,EE,003693D4,word,3C033F40
