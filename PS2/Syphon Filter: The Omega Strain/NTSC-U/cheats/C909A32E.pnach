@@ -48,9 +48,6 @@ patch=1,EE,2042F4BC,word,00000000
 patch=1,EE,204303F4,word,00000000
 patch=1,EE,204305D4,word,00000000
 
-//Select any mission
-patch=1,EE,20281028,word,00000000
-
 //CHEATS
 //Open Weapons
 //patch=1,EE,20311FCC,extended,24020001
