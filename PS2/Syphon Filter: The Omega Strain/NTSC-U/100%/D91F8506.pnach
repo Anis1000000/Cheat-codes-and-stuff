@@ -1,8 +1,8 @@
 gametitle=Syphon Filter: The Omega Strain Demo
 comment=by YukiXXL
 
-//BOOT_FRONTEND=1
-patch=1,EE,207EE219,byte,31
+//BOOT_FRONTEND=1 (PS2-107720A8 0A0D313D)
+patch=1,EE,207720A9,byte,31
 
 //CHEATS!
 //Missions Completed
