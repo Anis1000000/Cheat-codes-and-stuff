@@ -1,6 +1,8 @@
 gametitle=SFOS Review Code Mar 6 2004
 comment=YukiXXL
 
+//Enable Manual gamefixes and EE Timing Hack inside PCSX2 options.
+
 //Dongle protection bypass
 patch=1,EE,0041D418,byte,0
 
