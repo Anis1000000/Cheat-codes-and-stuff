@@ -8,7 +8,6 @@ About save files:
 "Standard+Online+WS" - Standard 17 profiles with online levels offline and widescreen fix.
 
 There are many types which Save Builder was able to export.
-
 Unsure which to use... well, if you have emulator like PCSX2, then use:
 
 SLES-52450 Serious Sam (86DC4BFB).psu - PAL
