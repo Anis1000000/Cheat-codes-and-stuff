@@ -1,5 +1,5 @@
-gametitle=Syphon Filter: The Omega Strain (SCES-52033)
-comment=Widescreen hack by nemesis2000 (pnach by nemesis2000)
+gametitle=Syphon Filter: The Omega Strain EU
+comment=Widescreen hack by nemesis2000
 
 //gameplay
 patch=1,EE,003972e0,word,3c043f40
