@@ -1,3 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1
+comment=Basic fixes
+
 //NV and Flashlight Fix
 patch=0,EE,00367798,word,48438000
 patch=0,EE,0036779C,word,4B06521B
