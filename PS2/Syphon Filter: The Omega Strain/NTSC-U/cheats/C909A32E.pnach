@@ -1,8 +1,8 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 1
 comment=by YukiXXL
 //Enable online lobby
-patch=1,EE,2028B16C,word,24A5FA20
-patch=1,EE,2028B174,word,24C6FA38
+//patch=1,EE,2028B16C,word,24A5FA20
+//patch=1,EE,2028B174,word,24C6FA38
 
 //LAN (gLAN_AVAILABLE)
 patch=1,EE,004AC540,byte,1
