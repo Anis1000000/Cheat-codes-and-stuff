@@ -1,3 +1,4 @@
+About save files:
 "My+Online" - Save containing my created profiles ( all standard profiles deleted ), my profiles have all main levels unlocked and this save also contains online levels offline.
 "My+Online+WS" - Save containing my created profiles ( all standard profiles deleted ), my profiles have all main levels unlocked and this save also contains online levels offline and widescreen fix.
 "Standard+Online" - Standard 17 profiles with online levels offline only.
