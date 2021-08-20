@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <filesystem>
+#include <ctime>
 
 using namespace std;
 
@@ -27,7 +28,7 @@ int main()
 
     //Writing timestamp
     cout << "Writing default timestamp..." << endl;
-    unsigned int timestamp = 1074218745;
+    time_t timestamp = time(nullptr);
 
     archive.write((char*)&timestamp, sizeof(unsigned int));
     cout << "Done!" << endl;
@@ -152,23 +153,6 @@ int main()
 
     //Finish
     cout << "HOG archive packed !" << endl;
-
-    //Another one?
-    cout << "Another HOG archive?" << endl;
-    char answer = 'f';
-    switch (answer)
-    {
-    case 'y':
-        return main();
-        break;
-
-    case 'n':
-        return 0;
-        break;
-
-    default:
-        cout << "y for YES ; n for NO" << endl;
-    }
 
     return 0;
 }
