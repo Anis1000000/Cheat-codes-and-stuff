@@ -82,7 +82,7 @@ int main()
             archive << dir_entry.path().filename().string();
             archive.write((char*)&x, sizeof(unsigned char));
             current_file = dir_entry.path().filename().string();
-            offset_follower = offset_follower + current_file.length() + 1;
+            offset_follower = offset_follower + current_file.length()+1;
         }
     if ( offset_follower % 4 != 0 )
     {
@@ -110,6 +110,13 @@ int main()
     int i = 1;
     for (const auto& dir_entry : filesystem::directory_iterator{ path })
         {
+            //Writing file offset
+            long int file_offset = 0;
+            file_offset = offset_follower - first_file_offset;
+            archive.seekp(offset_header);
+            archive.write((char*)&file_offset, sizeof(unsigned int));
+            archive.seekp(offset_follower);
+
             in.open (dir_entry.path(), ios::binary | ios::in );
             if (!in.is_open())
             {
@@ -119,14 +126,9 @@ int main()
 
             copy(istreambuf_iterator<char>(in), istreambuf_iterator<char>(), ostreambuf_iterator<char>(archive));
 
-            //Writing file offset
-            long int file_offset = 0;
+            //Adding offset_follower
             in.seekg(0, ios::end);
             offset_follower = offset_follower + in.tellg();
-            file_offset = offset_follower + first_file_offset;
-            archive.seekp(offset_header);
-            archive.write((char*)&file_offset, sizeof(unsigned int));
-            archive.seekp(offset_follower);
             in.close();
 
             offset_header = offset_header + 4;
@@ -145,7 +147,7 @@ int main()
 
     //Writing Archive Size
     cout << "Writing Archive Size..." << endl;
-    long int archive_size = offset_follower + 2048;
+    long int archive_size = offset_follower - first_file_offset;
     archive.seekp(offset_header);
     archive.write((char*)&archive_size, sizeof(unsigned int));
     cout << "Done!" << endl;
