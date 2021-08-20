@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <conio.h>
 #include <filesystem>
 
 using namespace std;
@@ -18,7 +17,7 @@ int main()
     //Creating output archive
     cout << "Packing HOG..." << endl;
 
-    fstream archive;
+    ofstream archive;
     archive.open ( folderout, ios::binary | ios::out | ios::trunc);
     if (!archive.is_open())
     {
@@ -64,7 +63,7 @@ int main()
     cout << "Skiping some header data (writing it later)..." << endl;
     int x = NULL;
     int offset_header = 16;
-    int offset_follower = 16;
+    long int offset_follower = 16;
 
     for ( int i = 0 ; i < (numfiles+2) ; i++ )
     {
@@ -91,39 +90,85 @@ int main()
             archive.write((char*)&x, sizeof(unsigned char));
         }
     }
+    offset_follower = offset_follower + ( 4 - (offset_follower % 4) );
     cout << "Done!" << endl;
 
     //Writing First File Offset
     cout << "Writing First File Offset in header..." << endl;
-    int first_file_offset = offset_follower + 1;
+    int first_file_offset = offset_follower;
     archive.seekp(offset_header);
     archive.write((char*)&first_file_offset, sizeof(unsigned int));
     archive.seekp(offset_follower);
-    offset_header = offset_header + 8;
+    offset_header = offset_header + 4;
     cout << "Done!" << endl;
 
     //Writing file data
     cout << "Writing file data..." << endl;
     char c;
-    fstream in;
+    ifstream in;
+    int i = 1;
     for (const auto& dir_entry : filesystem::directory_iterator{ path })
         {
-            in.open (dir_entry.path().filename().string(), ios::binary | ios::in );
+            in.open (dir_entry.path(), ios::binary | ios::in );
             if (!in.is_open())
             {
                 cout << "Error opening file!" << endl;
                 return 1;
             }
-            for ( int i = 1 ; i <= numfiles; i++ )
-            {
-                cout << i << " of " << numfiles << " are done." << endl;
-            }
+
+            copy(istreambuf_iterator<char>(in), istreambuf_iterator<char>(), ostreambuf_iterator<char>(archive));
+
+            //Writing file offset
+            long int file_offset = 0;
+            in.seekg(0, ios::end);
+            offset_follower = offset_follower + in.tellg();
+            file_offset = offset_follower + first_file_offset;
+            archive.seekp(offset_header);
+            archive.write((char*)&file_offset, sizeof(unsigned int));
+            archive.seekp(offset_follower);
+            in.close();
+
+            offset_header = offset_header + 4;
+
+            cout << i << " of " << numfiles << " are done." << endl;
+            i = i + 1;
         }
     in.close();
+    cout << "Done!" << endl;
 
+    //Fix file offset
+    cout << "Fixing one file offset..." << endl;
+    archive.seekp(20);
+    archive.write((char*)&x, sizeof(unsigned int));
+    cout << "Done!" << endl;
+
+    //Writing Archive Size
+    cout << "Writing Archive Size..." << endl;
+    long int archive_size = offset_follower + 2048;
+    archive.seekp(offset_header);
+    archive.write((char*)&archive_size, sizeof(unsigned int));
+    cout << "Done!" << endl;
     archive.close();
 
-    getch();
+    //Finish
+    cout << "HOG archive packed !" << endl;
+
+    //Another one?
+    cout << "Another HOG archive?" << endl;
+    char answer = 'f';
+    switch (answer)
+    {
+    case 'y':
+        return main();
+        break;
+
+    case 'n':
+        return 0;
+        break;
+
+    default:
+        cout << "y for YES ; n for NO" << endl;
+    }
 
     return 0;
 }
