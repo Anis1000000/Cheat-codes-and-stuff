@@ -3,6 +3,7 @@
 #include <string>
 #include <filesystem>
 #include <ctime>
+#include <conio.h>
 
 using namespace std;
 
@@ -10,8 +11,26 @@ int main()
 {
     //Start
     string folder, folderout;
-    cout << "Type the folder name to use: ";
+    cout << "Type the folder name to use (or Drag n Drop folder): ";
     getline(cin, folder);
+    cout << "Press [ENTER] to begin." << endl;
+
+    //Drag n Drop
+    for( int ch = _getch(); ch != '\r'; ch = _getch() )
+    {
+        if( ch == '\"' ) // path containing spaces. read til next '"' ...
+        {
+             while( ( ch = _getch() ) != '\"' )
+                folder += ch;
+        }
+        else // path not containing spaces. read as long as chars are coming rapidly.
+        {
+            folder += ch;
+
+            while( _kbhit() )
+                folder += _getch();
+        }
+    }
 
     folderout = folder + ".HOG";
 
@@ -155,6 +174,8 @@ int main()
 
     //Finish
     cout << "HOG archive packed !" << endl;
+
+    _getch();
 
     return 0;
 }
