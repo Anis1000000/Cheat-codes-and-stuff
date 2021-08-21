@@ -103,14 +103,14 @@ int main()
             current_file = dir_entry.path().filename().string();
             offset_follower = offset_follower + current_file.length()+1;
         }
-    if ( offset_follower % 4 != 0 )
+
+    long int devider = offset_follower - ((offset_follower / 2048) * 2048);
+
+    for ( int i = 0; i < (2048 - devider); i++ )
     {
-        for ( int i = 0 ; i < 4 - (offset_follower % 4); i++ )
-        {
-            archive.write((char*)&x, sizeof(unsigned char));
-        }
+        archive.write((char*)&x, sizeof(unsigned char));
+        offset_follower = offset_follower + 1;
     }
-    offset_follower = offset_follower + ( 4 - (offset_follower % 4) );
     cout << "Done!" << endl;
 
     //Writing First File Offset
@@ -166,7 +166,7 @@ int main()
 
     //Writing Archive Size
     cout << "Writing Archive Size..." << endl;
-    long int archive_size = offset_follower - first_file_offset;
+    long int archive_size = offset_follower + 2048;
     archive.seekp(offset_header);
     archive.write((char*)&archive_size, sizeof(unsigned int));
     cout << "Done!" << endl;
