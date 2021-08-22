@@ -9,6 +9,11 @@ using namespace std;
 
 int main()
 {
+    //Loop
+    char answer;
+    do {
+
+    answer = ' ';
     //Start
     string folder, folderout;
     cout << "Type the folder name to use (or Drag n Drop folder): ";
@@ -175,7 +180,16 @@ int main()
     //Finish
     cout << "HOG archive packed !" << endl;
 
-    _getch();
+    //Loop end
+    cout << "Another HOG archive?" << endl;
+    while ( answer != 'y' && answer != 'n' )
+    {
+        cout << "y for YES ; n for NO." << endl;
+        cin >> answer;
+    }
+    cin.ignore();
+
+    } while ( answer != 'n' );
 
     return 0;
 }
