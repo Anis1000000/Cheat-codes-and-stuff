@@ -16,3 +16,7 @@ patch=1,EE,00375564,word,e603007c
 //FMV's fix
 patch=1,EE,003F752c,word,24101400
 patch=1,EE,003F7534,word,24127600
+
+//Other languages SNDVAG fix
+patch=1,EE,2049F5CC,word,482E7325
+patch=1,EE,2049F5D0,word,0000474F
