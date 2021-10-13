@@ -30,6 +30,9 @@ patch=1,EE,20464D48,word,00000000
 //Buddy climb
 patch=1,EE,20171898,word,00000000
 
+//Online dialogues
+patch=1,EE,2012F818,word,00000000
+
 //Own agent on Bonus missions
 patch=1,EE,204ACBB0,word,00000000
 patch=1,EE,204ACBB4,word,00000000
