@@ -45,5 +45,5 @@ patch=1,EE,20185c88,word,00000000
 patch=1,EE,2012EE58,word,00000000
 
 //Codename
-//Python=1; Viper=2; Dragon=3
+//Cobra=0; Python=1; Viper=2; Dragon=3
 patch=1,EE,20494178,byte,3
