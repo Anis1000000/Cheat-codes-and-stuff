@@ -1,10 +1,10 @@
 gametitle=SFOS USA
 comment=by YukiXXL
 
-//Online controller (Otherwise, other codenames don't work)
+//Online controller (Otherwise, almost everything here breaks)
 patch=1,EE,201B7020,word,00000000
 
-//Mission end fix
+//Mission end fix (Otherwise black screen when using above code)
 patch=1,EE,2012ED84,word,00000000
 
 //Quickchat enabled
@@ -15,7 +15,7 @@ patch=1,EE,202B155C,word,00000000
 //Radio (when killed)
 patch=1,EE,2018C818,word,00000000
 
-//Show codename
+//Show codename on the right
 patch=1,EE,2045E33C,word,00000000
 
 //Minimap fix
@@ -33,16 +33,17 @@ patch=1,EE,204633C4,word,00000000
 patch=1,EE,204635A4,word,00000000
 
 //Equipment setup
-//Beginning at it
+//Beginning at it (Can crash if disabled when using codenames)
 patch=1,EE,201685DC,word,00000000
 //After pressing square or triangle
 patch=1,EE,202BCD28,word,00000000
 patch=1,EE,202BCDFC,word,00000000
 
 //Codename spelling and dependecies
-patch=1,EE,2013681c,word,00000000
+patch=1,EE,2013681C,word,00000000
 patch=1,EE,20185c88,word,00000000
 patch=1,EE,2012EE58,word,00000000
 
-//Codename = Dragon
-patch=1,EE,20494178,word,00000003
+//Codename
+//Python=1; Viper=2; Dragon=3
+patch=1,EE,20494178,byte,3
