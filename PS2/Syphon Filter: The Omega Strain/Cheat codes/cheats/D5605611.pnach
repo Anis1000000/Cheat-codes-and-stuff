@@ -6,7 +6,7 @@ patch=1,EE,202A0244,word,24A5AEB0
 patch=1,EE,202A024C,word,24C6AEC8
 
 //Enable TEST button
-patch=1,EE,202A0994,word,8C24BA38
+patch=1,EE,00506490,byte,1
 patch=1,EE,2051EEA8,byte,0
 
 //0 = Offline; 1 = Online
