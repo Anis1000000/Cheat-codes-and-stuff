@@ -47,3 +47,7 @@ patch=1,EE,204ACBDC,word,00000000
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20332B5C,extended,00000000
+
+//FOR FUN!
+//Enable all spawns
+//patch=1,EE,201b422c,word,10620052
