@@ -51,3 +51,7 @@ patch=1,EE,20332B5C,extended,00000000
 //FOR FUN!
 //Enable all spawns
 //patch=1,EE,201b422c,word,10620052
+
+//Team par instead of Solo par
+patch=1,EE,20368CB8,word,00000000
+patch=1,EE,20368D8C,word,00000000
