@@ -58,3 +58,6 @@ patch=1,EE,20332B5C,extended,00000000
 
 //Count kill as Collateral
 //patch=1,EE,20186FD8,word,1040001F
+
+//Toss Body instead of laying it down
+patch=1,EE,201AC52C,word,1462001A
