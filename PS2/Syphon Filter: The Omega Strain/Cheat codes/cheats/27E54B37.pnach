@@ -19,16 +19,13 @@ patch=1,EE,20298914,word,8C242498
 
 //EXTRA!
 //Equipment Setup (Belarus 2 bugs!)
-patch=1,EE,202C77F8,word,00000000
+//patch=1,EE,202C77F8,word,00000000
 
-//Scores (Belarus 2 bugs!)
-patch=1,EE,20374B58,word,00000000
-patch=1,EE,2036D4A0,word,00000000
-patch=1,EE,2036CD00,word,00000000
-patch=1,EE,2046B09C,word,00000000
-//EndGame
+//Marks and Eff award
 patch=1,EE,2046C044,word,00000000
-patch=1,EE,2046C224,word,00000000
+//Stats
+patch=1,EE,20374B58,word,00000000
+patch=1,EE,2046B09C,word,00000000
 
 //value_codename
 patch=1,EE,20465B40,word,00000000
@@ -39,10 +36,20 @@ patch=1,EE,2047556C,word,00000000
 //Buddy climb
 patch=1,EE,20170368,word,00000000
 
+//Online dialogues
+patch=1,EE,2012FA88,word,00000000
+
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20338AFC,extended,24020001
 
-//Freeze timer
-//patch=1,EE,2023B720,extended,AE0006DC
-//patch=1,EE,2023B724,extended,44800000
+//FOR FUN!
+//Enable all spawns
+//patch=1,EE,201B483C,word,10620052
+
+//Disable radio logs
+//You can hear "The First part of the mission is complete" on some missions where there are other lines
+//patch=1,EE,001C6E40,word,10600003
+
+//Toss Body instead of laying it down
+patch=1,EE,201ACA9C,word,1462001A
