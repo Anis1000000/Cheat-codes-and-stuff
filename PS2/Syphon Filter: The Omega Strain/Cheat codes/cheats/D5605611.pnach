@@ -41,10 +41,6 @@ patch=1,EE,204ACBD4,word,00000000
 patch=1,EE,204ACBD8,word,00000000
 patch=1,EE,204ACBDC,word,00000000
 
-//CHEATS ! Gamehacking.org ( except for Team Ratings ).
-//Open weapons
-patch=1,EE,20332B5C,extended,00000000
-
 //FOR FUN!
 //Enable all spawns
 //patch=1,EE,201B422C,word,10620052
@@ -58,3 +54,10 @@ patch=1,EE,20332B5C,extended,00000000
 
 //Toss Body instead of laying it down
 patch=1,EE,201AC52C,word,1462001A
+
+//CHEATS ! Gamehacking.org ( except for Team Ratings ).
+//Open weapons
+patch=1,EE,20332B5C,extended,00000000
+
+//Unlock all levels
+//patch=1,EE,20333020,word,2002FFFF
