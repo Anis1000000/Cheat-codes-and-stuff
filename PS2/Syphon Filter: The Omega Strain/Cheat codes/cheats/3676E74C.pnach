@@ -2,7 +2,11 @@ gametitle=Syphon Filter: The Omega Virus
 comment=YukiXXL
 //Online enabler code-2058F8E8
 
-//LAN
+//DNAS Bypass
+patch=1,EE,20384D30,word,03E00008
+patch=1,EE,20384D34,word,00000000
+
+//Enable TEST button
 patch=1,EE,202A53FC,word,8C2480F8
 
 //Online Lobby
@@ -28,8 +32,12 @@ patch=1,EE,2036EF60,word,00000000
 patch=1,EE,2047079C,word,00000000
 
 //EndGame
-patch=1,EE,20471744,word,00000000
 patch=1,EE,20471924,word,00000000
+//Marks and Eff award
+patch=1,EE,20471744,word,00000000
+
+//Enable value_codename
+patch=1,EE,2046B1E0,word,00000000
 
 //Quickchat
 patch=1,EE,2047ACDC,word,00000000
@@ -37,6 +45,44 @@ patch=1,EE,2047ACDC,word,00000000
 //Buddy climb
 patch=1,EE,20170448,word,00000000
 
+//Online dialogues
+patch=1,EE,2012FA88,word,00000000
+
+//Own agent on Bonus missions
+patch=1,EE,204B8170,word,00000000
+patch=1,EE,204B8174,word,00000000
+patch=1,EE,204B8178,word,00000000
+patch=1,EE,204B817C,word,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,204B8190,word,00000000
+patch=1,EE,204B8194,word,00000000
+patch=1,EE,204B8198,word,00000000
+patch=1,EE,204B819C,word,00000000
+
+//SP Team Par
+patch=1,EE,208B606C,word,00000186
+patch=1,EE,208B60CC,word,000002BC
+patch=1,EE,208B60EC,word,00000258
+patch=1,EE,208B612C,word,00000258
+patch=1,EE,208B614C,word,00000258
+patch=1,EE,208B616C,word,000004B0
+patch=1,EE,208B61CC,word,0000021C
+patch=1,EE,208B61EC,word,0000012C
+
+//FOR FUN!
+//Enable all spawns
+patch=1,EE,201B49BC,word,10620052
+
+//Disable radio logs
+//You can hear "The First part of the mission is complete" on some missions where there are other lines
+//patch=1,EE,001C6F78,word,10600003
+
+//Toss Body
+patch=1,EE,201ACC6C,word,1462001A
+
 //CHEATS!
 //All weapons
 patch=1,EE,2033ACBC,word,24020001
+
+//Unlock all levels
+patch=1,EE,2033B180,word,2002FFFF
