@@ -44,6 +44,18 @@ patch=1,EE,2012FA88,word,00000000
 patch=1,EE,20338AFC,extended,24020001
 
 //FOR FUN!
+
+//Own agent on Bonus missions
+patch=1,EE,204B2590,word,00000000
+patch=1,EE,204B2594,word,00000000
+patch=1,EE,204B2598,word,00000000
+patch=1,EE,204B259C,word,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,204B25B0,word,00000000
+patch=1,EE,204B25B4,word,00000000
+patch=1,EE,204B25B8,word,00000000
+patch=1,EE,204B25BC,word,00000000
+
 //Enable all spawns
 //patch=1,EE,201B483C,word,10620052
 
@@ -53,3 +65,7 @@ patch=1,EE,20338AFC,extended,24020001
 
 //Toss Body instead of laying it down
 patch=1,EE,201ACA9C,word,1462001A
+
+//CHEATS!
+//Unlock all levels
+//patch=1,EE,20338FC0,word,2002FFFF
