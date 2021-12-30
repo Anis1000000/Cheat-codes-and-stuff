@@ -1,6 +1,10 @@
 gametitle=Syphon Filter: The Omega Strain USA
 comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
+
+//PAL videomode
+patch=1,EE,201656A0,word,14400009
+
 //Enable Online lobby.
 patch=1,EE,202A0244,word,24A5AEB0
 patch=1,EE,202A024C,word,24C6AEC8
@@ -61,6 +65,3 @@ patch=1,EE,20332B5C,extended,00000000
 
 //Unlock all levels
 //patch=1,EE,20333020,word,2002FFFF
-
-//PAL videomode
-patch=1,EE,201656A0,word,14400009
