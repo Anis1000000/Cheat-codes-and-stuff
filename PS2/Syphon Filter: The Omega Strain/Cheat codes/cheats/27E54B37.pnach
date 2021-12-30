@@ -1,6 +1,12 @@
 gametitle=Syphon Filter: The Omega Strain EU
 comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
+
+//NTSC videmode
+patch=1,EE,20175DF8,word,24A53CF0
+//ProScan videomode (NTSC code needs to be enabled)
+patch=1,EE,20175E54,word,1440000A
+
 //Enable Online lobby.
 patch=1,EE,202A350C,word,24A52230
 patch=1,EE,202A3514,word,24C62248
