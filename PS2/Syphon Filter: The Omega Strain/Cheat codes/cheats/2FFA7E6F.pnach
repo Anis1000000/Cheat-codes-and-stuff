@@ -1,6 +1,9 @@
 gametitle=Jampack Demo
 comment=by YukiXXL
 
+//PAL videomode
+//patch=1,EE,2022E9D0,word,14400009
+
 //E3_BUILD=1 (PS2-20771EF0 313D444C)
 //patch=1,EE,20771EF3,byte,31
 
@@ -57,6 +60,3 @@ patch=1,EE,202CAB1C,word,902301C0
 
 //Buddy climb
 patch=1,EE,20229BC4,word,902301C0
-
-//PAL videomode
-//patch=1,EE,2022E9D0,word,14400009
