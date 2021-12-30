@@ -57,3 +57,6 @@ patch=1,EE,202CAB1C,word,902301C0
 
 //Buddy climb
 patch=1,EE,20229BC4,word,902301C0
+
+//PAL videomode
+patch=1,EE,2022E9D0,word,14400009
