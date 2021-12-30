@@ -61,3 +61,6 @@ patch=1,EE,20332B5C,extended,00000000
 
 //Unlock all levels
 //patch=1,EE,20333020,word,2002FFFF
+
+//PAL videomode
+patch=1,EE,201656A0,word,14400009
