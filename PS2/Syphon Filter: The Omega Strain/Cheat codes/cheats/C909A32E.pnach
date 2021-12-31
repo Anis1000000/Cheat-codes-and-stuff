@@ -22,11 +22,6 @@ patch=1,EE,004b5190,byte,1
 //debugTest
 patch=1,EE,004BABA0,byte,1
 
-//Mission Setup
-patch=1,EE,2028162C,word,00000000
-//Join Mission
-patch=1,EE,20282F08,word,00000000
-
 //Equipment Setup
 patch=1,EE,202ABF18,word,00000000
 
@@ -51,3 +46,22 @@ patch=1,EE,204305D4,word,00000000
 //CHEATS
 //Open Weapons
 //patch=1,EE,20311FCC,extended,24020001
+
+//UseLevelCharacter
+patch=1,EE,2046FCD0,word,00000000
+patch=1,EE,2046FCD8,word,00000000
+patch=1,EE,2046FCDC,word,00000000
+
+//OnlineLevels
+patch=1,EE,2046FD30,word,01010101
+patch=1,EE,2046FD34,word,01010101
+patch=1,EE,2046FD38,word,01010101
+patch=1,EE,2046FD3C,word,01010101
+
+//LevelValid
+patch=1,EE,2046FDF0,word,01010101
+patch=1,EE,2046FDF4,word,01010101
+patch=1,EE,2046FDF8,word,01010101
+patch=1,EE,2046FDF8,word,01010101
+patch=1,EE,2046FDFC,word,01010101
+patch=1,EE,2046FE00,word,00000101
