@@ -4,6 +4,12 @@ comment=by YukiXXL
 //PAL videomode
 //patch=1,EE,2022E9D0,word,14400009
 
+//Disable videos (SOLMOVIE,EOLMOVIE)
+//patch=1,EE,201F7464,word,00000000
+//patch=1,EE,201F7474,word,00000000
+//ProScan (videos need to be disabled)
+//patch=1,EE,2022EA1C,word,1440000a
+
 //E3_BUILD=1 (PS2-20771EF0 313D444C)
 //patch=1,EE,20771EF3,byte,31
 
