@@ -1,7 +1,6 @@
 # Bunch of cheat codes.
 
 ## .pnach files with game version:
-
 - 0DDA2728 - Public Beta 2
 - 27E54B37 - Europe/PAL
 - 2FFA7E6F - Jampack Demo
