@@ -1,0 +1,64 @@
+gametitle=Syphon Filter: The Omega Virus
+comment=by YukiXXL
+
+//DNAS Bypass
+patch=1,EE,20384D30,word,03E00008
+patch=1,EE,20384D34,word,00000000
+
+//ALL LEVELS
+patch=1,EE,2033B180,extended,2002FFFF
+
+//TORONTO1 = TRAINING map fix
+patch=1,EE,204B82A0,word,43C33E14
+
+//TORONTO1 => TRAINING
+patch=1,EE,204B8010,word,49415254
+patch=1,EE,204B8014,word,474E494E
+
+//Only SP missions online
+patch=1,EE,204B8230,word,01000001
+patch=1,EE,204B8234,word,01010000
+patch=1,EE,204B8238,word,01010100
+patch=1,EE,204B823C,word,01010000
+patch=1,EE,204B8240,word,00000000
+
+//Level IDs fix
+patch=1,EE,204B80F4,word,00000003
+patch=1,EE,204B80F8,word,00000006
+patch=1,EE,204B80FC,word,00000007
+patch=1,EE,204B8100,word,00000009
+patch=1,EE,204B8104,word,0000000A
+patch=1,EE,204B8108,word,0000000B
+patch=1,EE,204B810C,word,0000000E
+patch=1,EE,204B8110,word,0000000F
+
+//Lobby IDs fix
+patch=1,EE,204B812C,word,00000001
+patch=1,EE,204B8138,word,00000002
+patch=1,EE,204B813C,word,00000003
+patch=1,EE,204B8144,word,00000004
+patch=1,EE,204B8148,word,00000005
+patch=1,EE,204B814C,word,00000006
+patch=1,EE,204B8158,word,00000007
+patch=1,EE,204B815C,word,00000008
+
+//SP Team Par
+patch=1,EE,208B606C,word,00000186
+patch=1,EE,208B60CC,word,000002BC
+patch=1,EE,208B60EC,word,00000258
+patch=1,EE,208B612C,word,00000258
+patch=1,EE,208B614C,word,00000258
+patch=1,EE,208B616C,word,000004B0
+patch=1,EE,208B61CC,word,0000021C
+patch=1,EE,208B61EC,word,0000012C
+
+//Own agent on Bonus missions
+patch=1,EE,204B8170,word,00000000
+patch=1,EE,204B8174,word,00000000
+patch=1,EE,204B8178,word,00000000
+patch=1,EE,204B817C,word,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,204B8190,word,00000000
+patch=1,EE,204B8194,word,00000000
+patch=1,EE,204B8198,word,00000000
+patch=1,EE,204B819C,word,00000000
