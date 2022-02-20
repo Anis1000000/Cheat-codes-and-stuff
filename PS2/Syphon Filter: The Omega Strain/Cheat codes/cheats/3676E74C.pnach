@@ -2,6 +2,9 @@ gametitle=Syphon Filter: The Omega Virus
 comment=YukiXXL
 //Online enabler code-2058F8E8
 
+//PAL video mode
+patch=1,EE,20175F24,word,1440000A
+
 //DNAS Bypass
 patch=1,EE,20384D30,word,03E00008
 patch=1,EE,20384D34,word,00000000
