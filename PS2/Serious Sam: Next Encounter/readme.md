@@ -7,7 +7,7 @@
 
 "Standard+Online+WS" - Standard 17 profiles with online levels offline and widescreen fix.
 
-## If you wan't it on original hardware, convert PCSX2 Memory Card to folders or extract the save file contents and these are the folder names to copy onto PS2 Memory Card:
+## If you wan't it on original hardware, use provided zip files or convert PCSX2 Memory Card to folders or extract the save file contents and these are the folder names to copy onto PS2 Memory Card:
 
 - "BESLES-52450SERIOUS" - PAL
 
