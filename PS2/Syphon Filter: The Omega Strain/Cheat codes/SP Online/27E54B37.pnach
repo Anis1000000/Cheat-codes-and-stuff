@@ -2,63 +2,119 @@ gametitle=SFOS EU (PAL)
 comment=HOLIDAY SPECIAL
 
 //DNAS Bypass
-patch=1,EE,20382390,word,03E00008
-patch=1,EE,20382394,word,00000000
+patch=1,EE,20382390,extended,03E00008
+patch=1,EE,20382394,extended,00000000
+
+//ENABLE (START+L1+R1+R2)
 
 //ALL LEVELS
+patch=1,EE,D056549C,extended,0000F1F7
 patch=1,EE,20338FC0,extended,2002FFFF
 
 //TORONTO1 = TRAINING map fix
-patch=1,EE,204B26C0,word,43C33E14
+patch=1,EE,D056549C,extended,0000F1F7
+patch=1,EE,204B26C0,extended,43C33E14
 
 //TORONTO1 => TRAINING
-patch=1,EE,204B2430,word,49415254
-patch=1,EE,204B2434,word,474E494E
+patch=1,EE,E002F1F7,extended,0056549C
+patch=1,EE,204B2430,extended,49415254
+patch=1,EE,204B2434,extended,474E494E
 
 //Only SP missions online
-patch=1,EE,204B2650,word,01000001
-patch=1,EE,204B2654,word,01010000
-patch=1,EE,204B2658,word,01010100
-patch=1,EE,204B265C,word,01010000
-patch=1,EE,204B2660,word,00000000
+patch=1,EE,E005F1F7,extended,0056549C
+patch=1,EE,204B2650,extended,01000001
+patch=1,EE,204B2654,extended,01010000
+patch=1,EE,204B2658,extended,01010100
+patch=1,EE,204B265C,extended,01010000
+patch=1,EE,204B2660,extended,00000000
 
 //Level IDs fix
-patch=1,EE,204B2514,word,00000003
-patch=1,EE,204B2518,word,00000006
-patch=1,EE,204B251C,word,00000007
-patch=1,EE,204B2520,word,00000009
-patch=1,EE,204B2524,word,0000000A
-patch=1,EE,204B2528,word,0000000B
-patch=1,EE,204B252C,word,0000000E
-patch=1,EE,204B2530,word,0000000F
+patch=1,EE,E008F1F7,extended,0056549C
+patch=1,EE,204B2514,extended,00000003
+patch=1,EE,204B2518,extended,00000006
+patch=1,EE,204B251C,extended,00000007
+patch=1,EE,204B2520,extended,00000009
+patch=1,EE,204B2524,extended,0000000A
+patch=1,EE,204B2528,extended,0000000B
+patch=1,EE,204B252C,extended,0000000E
+patch=1,EE,204B2530,extended,0000000F
 
 //Lobby IDs fix
-patch=1,EE,204B254C,word,00000001
-patch=1,EE,204B2558,word,00000002
-patch=1,EE,204B255C,word,00000003
-patch=1,EE,204B2564,word,00000004
-patch=1,EE,204B2568,word,00000005
-patch=1,EE,204B256C,word,00000006
-patch=1,EE,204B2578,word,00000007
-patch=1,EE,204B257C,word,00000008
+patch=1,EE,204B254C,extended,00000001
+patch=1,EE,204B2558,extended,00000002
+patch=1,EE,204B255C,extended,00000003
+patch=1,EE,204B2564,extended,00000004
+patch=1,EE,204B2568,extended,00000005
+patch=1,EE,204B256C,extended,00000006
+patch=1,EE,204B2578,extended,00000007
+patch=1,EE,204B257C,extended,00000008
 
 //SP Team Par
-patch=1,EE,20934ABC,word,00000186
-patch=1,EE,20934B1C,word,000002BC
-patch=1,EE,20934B3C,word,00000258
-patch=1,EE,20934B7C,word,00000258
-patch=1,EE,20934B9C,word,00000258
-patch=1,EE,20934BBC,word,000004B0
-patch=1,EE,20934C1C,word,0000021C
-patch=1,EE,20934C3C,word,0000012C
+patch=1,EE,20934ABC,extended,00000186
+patch=1,EE,20934B1C,extended,000002BC
+patch=1,EE,20934B3C,extended,00000258
+patch=1,EE,20934B7C,extended,00000258
+patch=1,EE,20934B9C,extended,00000258
+patch=1,EE,20934BBC,extended,000004B0
+patch=1,EE,20934C1C,extended,0000021C
+patch=1,EE,20934C3C,extended,0000012C
 
 //Own agent on Bonus missions
-patch=1,EE,204B2590,word,00000000
-patch=1,EE,204B2594,word,00000000
-patch=1,EE,204B2598,word,00000000
-patch=1,EE,204B259C,word,00000000
+patch=1,EE,E004F1F7,extended,0056549C
+patch=1,EE,204B2590,extended,00000000
+patch=1,EE,204B2594,extended,00000000
+patch=1,EE,204B2598,extended,00000000
+patch=1,EE,204B259C,extended,00000000
 //Enable equiping weapons on Bonus missions
-patch=1,EE,204B25B0,word,00000000
-patch=1,EE,204B25B4,word,00000000
-patch=1,EE,204B25B8,word,00000000
-patch=1,EE,204B25BC,word,00000000 
+patch=1,EE,E004F1F7,extended,0056549C
+patch=1,EE,204B25B0,extended,00000000
+patch=1,EE,204B25B4,extended,00000000
+patch=1,EE,204B25B8,extended,00000000
+patch=1,EE,204B25BC,extended,00000000 
+
+//DISABLE (START+L1+R1+L2)
+
+//ALL LEVELS
+patch=1,EE,D056549C,extended,0000F2F7
+patch=1,EE,20338FC0,extended,2002FFFF
+
+//TORONTO1 = TRAINING map fix
+patch=1,EE,D056549C,extended,0000F2F7
+patch=1,EE,204B26C0,extended,43C33E14
+
+//TORONTO1 => TRAINING
+patch=1,EE,E002F2F7,extended,0056549C
+patch=1,EE,204B2430,extended,49415254
+patch=1,EE,204B2434,extended,474E494E
+
+//Only SP missions online
+patch=1,EE,E005F2F7,extended,0056549C
+patch=1,EE,204B2650,extended,01000001
+patch=1,EE,204B2654,extended,01010000
+patch=1,EE,204B2658,extended,01010100
+patch=1,EE,204B265C,extended,01010000
+patch=1,EE,204B2660,extended,00000000
+
+//Level IDs fix
+patch=1,EE,E008F2F7,extended,0056549C
+patch=1,EE,204B2514,extended,00000003
+patch=1,EE,204B2518,extended,00000006
+patch=1,EE,204B251C,extended,00000007
+patch=1,EE,204B2520,extended,00000009
+patch=1,EE,204B2524,extended,0000000A
+patch=1,EE,204B2528,extended,0000000B
+patch=1,EE,204B252C,extended,0000000E
+patch=1,EE,204B2530,extended,0000000F
+
+//Own agent on Bonus missions
+patch=1,EE,E004F2F7,extended,0056549C
+patch=1,EE,204B2590,extended,00000000
+patch=1,EE,204B2594,extended,00000000
+patch=1,EE,204B2598,extended,00000000
+patch=1,EE,204B259C,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E004F2F7,extended,0056549C
+patch=1,EE,204B25B0,extended,00000000
+patch=1,EE,204B25B4,extended,00000000
+patch=1,EE,204B25B8,extended,00000000
+patch=1,EE,204B25BC,extended,00000000
