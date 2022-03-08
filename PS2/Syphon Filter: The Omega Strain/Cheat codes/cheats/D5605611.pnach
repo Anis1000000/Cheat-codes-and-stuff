@@ -3,65 +3,73 @@ comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
 
 //PAL videomode
-patch=1,EE,201656A0,word,14400009
-
-//Enable Online lobby.
-patch=1,EE,202A0244,word,24A5AEB0
-patch=1,EE,202A024C,word,24C6AEC8
+patch=1,EE,201656A0,extended,14400009
 
 //Enable TEST button
 patch=1,EE,00506490,byte,1
 patch=1,EE,2051EEA8,byte,0
 
-//Enable Mission Setup
-patch=1,EE,20295D3C,word,00000000
-//patch=1,EE,202A0FC0,word,00000000
-//Enable Join Mission
-patch=1,EE,202974F4,word,8C24B708
+//Fake byte
+patch=1,EE,005721E8,byte,1
 
 //Marks and Eff award
-patch=1,EE,204633C4,word,00000000
+patch=1,EE,004633C0,extended,902221E8
 
 //Enable value_codename
-patch=1,EE,2045E340,word,00000000
+patch=1,EE,0045E33C,extended,902221E8
 
 //Quickchat
-patch=1,EE,20464D48,word,00000000
+patch=1,EE,00464D44,extended,902221E8
 
 //Buddy climb
-patch=1,EE,20171898,word,00000000
+patch=1,EE,00171894,extended,902221E8
 
 //Online dialogues
-patch=1,EE,2012F818,word,00000000
+patch=1,EE,0012F818,extended,902221E8
+
+//Enable online objectives
+patch=1,EE,0012F818,extended,902221E8
 
 //Own agent on Bonus missions
-patch=1,EE,204ACBB0,word,00000000
-patch=1,EE,204ACBB4,word,00000000
-patch=1,EE,204ACBB8,word,00000000
-patch=1,EE,204ACBBC,word,00000000
+patch=1,EE,204ACBB0,extended,00000000
+patch=1,EE,204ACBB4,extended,00000000
+patch=1,EE,204ACBB8,extended,00000000
+patch=1,EE,204ACBBC,extended,00000000
 //Enable equiping weapons on Bonus missions
-patch=1,EE,204ACBD0,word,00000000
-patch=1,EE,204ACBD4,word,00000000
-patch=1,EE,204ACBD8,word,00000000
-patch=1,EE,204ACBDC,word,00000000
+patch=1,EE,204ACBD0,extended,00000000
+patch=1,EE,204ACBD4,extended,00000000
+patch=1,EE,204ACBD8,extended,00000000
+patch=1,EE,204ACBDC,extended,00000000
 
 //FOR FUN!
 //Enable all spawns
-//patch=1,EE,201B422C,word,10620052
+//patch=1,EE,201B422C,extended,0C0F2708
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,001C67D8,word,10600003
+//patch=1,EE,001C67D8,extended,10600003
 
 //Count kill as Collateral
-//patch=1,EE,20186FD8,word,1040001F
+//patch=1,EE,20186FD8,extended,1040001F
 
 //Toss Body instead of laying it down
-patch=1,EE,201AC52C,word,1462001A
+patch=1,EE,001AC528,extended,2402002C
 
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20332B5C,extended,00000000
 
 //Unlock all levels
-//patch=1,EE,20333020,word,2002FFFF
+//patch=1,EE,20333020,extended,2002FFFF
+
+//EXPERIMENTAL
+
+//Enable Online lobby.
+//patch=1,EE,202A0244,extended,24A5AEB0
+//patch=1,EE,202A024C,extended,24C6AEC8
+
+//Enable Mission Setup offline
+//patch=1,EE,20295D3C,extended,00000000
+//patch=1,EE,202A0FC0,extended,00000000
+//Enable Join Mission offline
+//patch=1,EE,202974F4,extended,8C24B708
