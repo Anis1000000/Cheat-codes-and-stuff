@@ -7,7 +7,7 @@ patch=1,EE,201656A0,extended,14400009
 
 //Enable TEST button
 patch=1,EE,00506490,byte,1
-patch=1,EE,2051EEA8,byte,0
+patch=1,EE,0051EEA8,byte,0
 
 //Fake byte
 patch=1,EE,005721E8,byte,1
