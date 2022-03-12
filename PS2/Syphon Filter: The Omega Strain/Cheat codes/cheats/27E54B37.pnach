@@ -7,43 +7,26 @@ patch=1,EE,20175DF8,word,24A53CF0
 //ProScan videomode (NTSC code needs to be enabled)
 patch=1,EE,20175E54,word,1440000A
 
-//Enable Online lobby.
-patch=1,EE,202A350C,word,24A52230
-patch=1,EE,202A3514,word,24C62248
-
 //Enable TEST button (removed function)
 patch=1,EE,202A3E5C,word,8C242858
 
-//0 = Offline; 1 = Online
-//patch=1,EE,205AA3E0,byte,0
-
-//Enable Mission Setup
-patch=1,EE,20296FD4,word,00000000
-//patch=1,EE,202AB490,word,00000000
-//Enable Join Mission
-patch=1,EE,20298914,word,8C242498
-
-//EXTRA!
-//Equipment Setup (Belarus 2 bugs!)
-//patch=1,EE,202C77F8,word,00000000
+//Fake byte
+patch=1,EE,0057D448,byte,1
 
 //Marks and Eff award
-patch=1,EE,2046C044,word,00000000
-//Stats
-patch=1,EE,20374B58,word,00000000
-patch=1,EE,2046B09C,word,00000000
+patch=1,EE,2046C040,word,9022D448
 
-//value_codename
-patch=1,EE,20465B40,word,00000000
+//Enable value_codename
+patch=1,EE,00465B3C,word,9022D448
 
 //Quickchat
-patch=1,EE,2047556C,word,00000000
+patch=1,EE,00475568,word,9022D448
 
 //Buddy climb
-patch=1,EE,20170368,word,00000000
+patch=1,EE,00170364,word,9022D448
 
-//Online dialogues
-patch=1,EE,2012FA88,word,00000000
+//Online objectives+dialogues
+patch=1,EE,0012FA88,word,9022D448
 
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
@@ -63,7 +46,7 @@ patch=1,EE,204B25B8,word,00000000
 patch=1,EE,204B25BC,word,00000000
 
 //Enable all spawns
-//patch=1,EE,201B483C,word,10620052
+//patch=1,EE,201B483C,word,0C0FAD7C
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
@@ -75,3 +58,18 @@ patch=1,EE,201ACA9C,word,1462001A
 //CHEATS!
 //Unlock all levels
 //patch=1,EE,20338FC0,word,2002FFFF
+
+//EXPERIMENTAL
+
+//Enable Online lobby.
+//patch=1,EE,202A350C,word,24A52230
+//patch=1,EE,202A3514,word,24C62248
+
+//0 = Offline; 1 = Online
+//patch=1,EE,205AA3E0,byte,0
+
+//Enable Mission Setup
+//patch=1,EE,20296FD4,word,00000000
+//patch=1,EE,202AB490,word,00000000
+//Enable Join Mission
+//patch=1,EE,20298914,word,8C242498
