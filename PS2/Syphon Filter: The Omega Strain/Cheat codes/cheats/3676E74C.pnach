@@ -5,7 +5,7 @@ comment=YukiXXL
 patch=1,EE,20175F24,extended,1440000A
 
 //Fake byte
-patch=1,EE,0058F908,byte,1
+patch=1,EE,0058F8E4,byte,1
 
 //DNAS Bypass
 patch=1,EE,20384D30,extended,03E00008
@@ -15,19 +15,19 @@ patch=1,EE,20384D34,extended,00000000
 patch=1,EE,202A53FC,extended,8C2480F8
 
 //Marks and Eff award
-patch=1,EE,10471740,extended,9022F908
+patch=1,EE,10471740,extended,9022F8E4
 
 //Enable value_codename
-patch=1,EE,1046B1DC,extended,9022F908
+patch=1,EE,1046B1DC,extended,9022F8E4
 
 //Quickchat
-patch=1,EE,1047ACD8,extended,9022F908
+patch=1,EE,1047ACD8,extended,9022F8E4
 
 //Buddy climb
-patch=1,EE,10170444,extended,9022F908
+patch=1,EE,10170444,extended,9022F8E4
 
 //Enable online objectives + dialogues
-patch=1,EE,1012FA88,extended,9022F908
+patch=1,EE,1012FA88,extended,9022F8E4
 
 //FOR FUN!
 
