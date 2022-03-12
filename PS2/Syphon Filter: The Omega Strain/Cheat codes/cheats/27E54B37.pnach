@@ -11,22 +11,22 @@ patch=1,EE,20175E54,word,1440000A
 patch=1,EE,202A3E5C,word,8C242858
 
 //Fake byte
-patch=1,EE,0057D448,byte,1
+patch=1,EE,0057D424,byte,1
 
 //Marks and Eff award
-patch=1,EE,2046C040,word,9022D448
+patch=1,EE,2046C040,word,9022D424
 
 //Enable value_codename
-patch=1,EE,00465B3C,word,9022D448
+patch=1,EE,00465B3C,word,9022D424
 
 //Quickchat
-patch=1,EE,00475568,word,9022D448
+patch=1,EE,00475568,word,9022D424
 
 //Buddy climb
-patch=1,EE,00170364,word,9022D448
+patch=1,EE,00170364,word,9022D424
 
 //Enable online objectives + dialogues
-patch=1,EE,0012FA88,word,9022D448
+patch=1,EE,0012FA88,word,9022D424
 
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
