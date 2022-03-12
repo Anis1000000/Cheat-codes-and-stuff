@@ -24,10 +24,7 @@ patch=1,EE,00464D44,extended,902221E8
 //Buddy climb
 patch=1,EE,00171894,extended,902221E8
 
-//Online dialogues
-patch=1,EE,0012F818,extended,902221E8
-
-//Enable online objectives
+//Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,902221E8
 
 //Own agent on Bonus missions
@@ -73,3 +70,15 @@ patch=1,EE,20332B5C,extended,00000000
 //patch=1,EE,202A0FC0,extended,00000000
 //Enable Join Mission offline
 //patch=1,EE,202974F4,extended,8C24B708
+
+//num_agnets (1-8)
+//patch=1,EE,002A159C,extended,24050001
+//patch=1,EE,002A15B4,extended,24060008
+
+//Plant C4s out of your ass
+//patch=1,EE,203D9AF0,extended,14200023
+//patch=1,EE,203D9B0C,extended,10620018
+
+//Pickup C4s
+//patch=1,EE,203D9BD4,extended,00000000
+//patch=1,EE,20174B94,extended,1660010A
