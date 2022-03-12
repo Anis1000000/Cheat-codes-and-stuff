@@ -1,91 +1,72 @@
 gametitle=Syphon Filter: The Omega Virus
 comment=YukiXXL
-//Online enabler code-2058F8E8
 
 //PAL video mode
-patch=1,EE,20175F24,word,1440000A
+patch=1,EE,20175F24,extended,1440000A
+
+//Fake byte
+patch=1,EE,0058F908,byte,1
 
 //DNAS Bypass
-patch=1,EE,20384D30,word,03E00008
-patch=1,EE,20384D34,word,00000000
+patch=1,EE,20384D30,extended,03E00008
+patch=1,EE,20384D34,extended,00000000
 
 //Enable TEST button
-patch=1,EE,202A53FC,word,8C2480F8
+patch=1,EE,202A53FC,extended,8C2480F8
 
-//Online Lobby
-patch=1,EE,202A4750,word,24A57E30
-patch=1,EE,202A4758,word,24C67E48
-
-//Mission Setup (and Begin Mission bypass)
-patch=1,EE,20297E34,word,00000000
-//patch=1,EE,202AD190,word,00000000
-//Join Mission
-patch=1,EE,20299774,word,8C247D38
-
-//value_codename
-patch=1,EE,2046B1E0,word,00000000
-
-//Equipment Setup
-patch=1,EE,202C9618,word,00000000
-
-//Scores
-patch=1,EE,20376DD8,word,00000000
-patch=1,EE,2036F700,word,00000000
-patch=1,EE,2036EF60,word,00000000
-patch=1,EE,2047079C,word,00000000
-
-//EndGame
-patch=1,EE,20471924,word,00000000
 //Marks and Eff award
-patch=1,EE,20471744,word,00000000
+patch=1,EE,10471740,extended,9022F908
 
 //Enable value_codename
-patch=1,EE,2046B1E0,word,00000000
+patch=1,EE,1046B1DC,extended,9022F908
 
 //Quickchat
-patch=1,EE,2047ACDC,word,00000000
+patch=1,EE,1047ACD8,extended,9022F908
 
 //Buddy climb
-patch=1,EE,20170448,word,00000000
+patch=1,EE,10170444,extended,9022F908
 
-//Online dialogues
-patch=1,EE,2012FA88,word,00000000
-
-//Own agent on Bonus missions
-patch=1,EE,204B8170,word,00000000
-patch=1,EE,204B8174,word,00000000
-patch=1,EE,204B8178,word,00000000
-patch=1,EE,204B817C,word,00000000
-//Enable equiping weapons on Bonus missions
-patch=1,EE,204B8190,word,00000000
-patch=1,EE,204B8194,word,00000000
-patch=1,EE,204B8198,word,00000000
-patch=1,EE,204B819C,word,00000000
-
-//SP Team Par
-patch=1,EE,208B606C,word,00000186
-patch=1,EE,208B60CC,word,000002BC
-patch=1,EE,208B60EC,word,00000258
-patch=1,EE,208B612C,word,00000258
-patch=1,EE,208B614C,word,00000258
-patch=1,EE,208B616C,word,000004B0
-patch=1,EE,208B61CC,word,0000021C
-patch=1,EE,208B61EC,word,0000012C
+//Enable online objectives + dialogues
+patch=1,EE,1012FA88,extended,9022F908
 
 //FOR FUN!
+
+//Own agent on Bonus missions
+patch=1,EE,204B8170,extended,00000000
+patch=1,EE,204B8174,extended,00000000
+patch=1,EE,204B8178,extended,00000000
+patch=1,EE,204B817C,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,204B8190,extended,00000000
+patch=1,EE,204B8194,extended,00000000
+patch=1,EE,204B8198,extended,00000000
+patch=1,EE,204B819C,extended,00000000
+
 //Enable all spawns
-patch=1,EE,201B49BC,word,10620052
+//patch=1,EE,201B49BC,extended,0C0FBB78
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,001C6F78,word,10600003
+//patch=1,EE,001C6F78,extended,10600003
 
 //Toss Body
-patch=1,EE,201ACC6C,word,1462001A
+//patch=1,EE,001ACC68,extended,2402002C
 
 //CHEATS!
 //All weapons
-patch=1,EE,2033ACBC,word,24020001
+patch=1,EE,2033ACBC,extended,24020001
 
 //Unlock all levels
-patch=1,EE,2033B180,word,2002FFFF
+patch=1,EE,2033B180,extended,2002FFFF
+
+//EXPERIMENTAL
+
+//Online Lobby
+//patch=1,EE,202A4750,extended,24A57E30
+//patch=1,EE,202A4758,extended,24C67E48
+
+//Mission Setup (and Begin Mission bypass)
+//patch=1,EE,20297E34,extended,00000000
+//patch=1,EE,202AD190,extended,00000000
+//Join Mission
+//patch=1,EE,20299774,extended,8C247D38
