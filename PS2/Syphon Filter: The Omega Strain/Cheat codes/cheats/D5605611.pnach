@@ -27,6 +27,8 @@ patch=1,EE,00171894,extended,902221E8
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,902221E8
 
+//FOR FUN!
+
 //Own agent on Bonus missions
 patch=1,EE,204ACBB0,extended,00000000
 patch=1,EE,204ACBB4,extended,00000000
@@ -38,7 +40,6 @@ patch=1,EE,204ACBD4,extended,00000000
 patch=1,EE,204ACBD8,extended,00000000
 patch=1,EE,204ACBDC,extended,00000000
 
-//FOR FUN!
 //Enable all spawns
 //patch=1,EE,201B422C,extended,0C0F2708
 
