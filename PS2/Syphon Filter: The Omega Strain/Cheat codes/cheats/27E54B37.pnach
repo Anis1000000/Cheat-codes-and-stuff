@@ -25,7 +25,7 @@ patch=1,EE,00475568,word,9022D448
 //Buddy climb
 patch=1,EE,00170364,word,9022D448
 
-//Online objectives+dialogues
+//Enable online objectives + dialogues
 patch=1,EE,0012FA88,word,9022D448
 
 //CHEATS ! Gamehacking.org ( except for Team Ratings ).
