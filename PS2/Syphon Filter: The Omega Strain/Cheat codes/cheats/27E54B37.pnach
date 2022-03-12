@@ -53,7 +53,7 @@ patch=1,EE,204B25BC,word,00000000
 //patch=1,EE,001C6E40,word,10600003
 
 //Toss Body instead of laying it down
-patch=1,EE,201ACA9C,word,1462001A
+patch=1,EE,001ACA98,word,2402002C
 
 //CHEATS!
 //Unlock all levels
