@@ -10,22 +10,22 @@ patch=1,EE,00506490,byte,1
 patch=1,EE,0051EEA8,byte,0
 
 //Fake byte
-patch=1,EE,005721E8,byte,1
+patch=1,EE,005721C4,byte,1
 
 //Marks and Eff award
-patch=1,EE,004633C0,extended,902221E8
+patch=1,EE,004633C0,extended,902221C4
 
 //Enable value_codename
-patch=1,EE,0045E33C,extended,902221E8
+patch=1,EE,0045E33C,extended,902221C4
 
 //Quickchat
-patch=1,EE,00464D44,extended,902221E8
+patch=1,EE,00464D44,extended,902221C4
 
 //Buddy climb
-patch=1,EE,00171894,extended,902221E8
+patch=1,EE,00171894,extended,902221C4
 
 //Enable online objectives + dialogues
-patch=1,EE,0012F818,extended,902221E8
+patch=1,EE,0012F818,extended,902221C4
 
 //FOR FUN!
 
