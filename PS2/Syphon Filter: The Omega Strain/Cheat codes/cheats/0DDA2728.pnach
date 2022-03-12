@@ -1,23 +1,24 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 2
 comment=by YukiXXL
 
-patch=1,EE,005748A8,byte,1
+//Fake Byte
+patch=1,EE,00574884,byte,1
 
 //Enable TEST button
 patch=1,EE,202A0064,extended,8C24B928
 patch=1,EE,20505B28,byte,0
 
 //Marks and Eff award
-patch=1,EE,004653A0,extended,902248A8
+patch=1,EE,004653A0,extended,90224884
 
 //Buddy climb
-patch=1,EE,0016FFC4,extended,902248A8
+patch=1,EE,0016FFC4,extended,90224884
 
 //value_codename
-patch=1,EE,0045EE9C,extended,902248A8
+patch=1,EE,0045EE9C,extended,90224884
 
 //Enable online objectives + dialogues
-patch=1,EE,0012F818,extended,902248A8
+patch=1,EE,0012F818,extended,90224884
 
 //CHEATS!
 //Open weapons
