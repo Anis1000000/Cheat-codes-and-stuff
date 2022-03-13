@@ -9,9 +9,10 @@ patch=1,EE,201656A0,extended,14400009
 patch=1,EE,00506490,byte,1
 patch=1,EE,0051EEA8,byte,0
 
-//Fake byte
+//Fake Byte
 patch=1,EE,005721C4,byte,1
 
+// Fake Byte code is needed for these codes to work !
 //Marks and Eff award
 patch=1,EE,004633C0,extended,902221C4
 
@@ -27,7 +28,14 @@ patch=1,EE,00171894,extended,902221C4
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,902221C4
 
-//FOR FUN!
+// CHEATS ! Gamehacking.org ( except for Team Ratings ).
+//Open weapons
+patch=1,EE,20332B5C,extended,00000000
+
+//Unlock all levels
+//patch=1,EE,20333020,extended,2002FFFF
+
+// FOR FUN!
 
 //Own agent on Bonus missions
 patch=1,EE,204ACBB0,extended,00000000
@@ -53,14 +61,7 @@ patch=1,EE,204ACBDC,extended,00000000
 //Toss Body instead of laying it down
 patch=1,EE,001AC528,extended,2402002C
 
-//CHEATS ! Gamehacking.org ( except for Team Ratings ).
-//Open weapons
-patch=1,EE,20332B5C,extended,00000000
-
-//Unlock all levels
-//patch=1,EE,20333020,extended,2002FFFF
-
-//EXPERIMENTAL
+// EXPERIMENTAL
 
 //Enable Online lobby.
 //patch=1,EE,202A0244,extended,24A5AEB0
