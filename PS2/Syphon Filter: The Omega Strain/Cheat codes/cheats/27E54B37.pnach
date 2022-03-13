@@ -3,73 +3,73 @@ comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
 
 //NTSC videmode
-patch=1,EE,20175DF8,word,24A53CF0
+patch=1,EE,20175DF8,extended,24A53CF0
 //ProScan videomode (NTSC code needs to be enabled)
-patch=1,EE,20175E54,word,1440000A
+patch=1,EE,20175E54,extended,1440000A
 
 //Enable TEST button (removed function)
-patch=1,EE,202A3E5C,word,8C242858
+patch=1,EE,202A3E5C,extended,8C242858
 
 //Fake Byte
 patch=1,EE,0057D424,byte,1
 
 // Fake Byte code is needed for these codes to work !
 //Marks and Eff award
-patch=1,EE,2046C040,word,9022D424
+patch=1,EE,2046C040,extended,9022D424
 
 //Enable value_codename
-patch=1,EE,00465B3C,word,9022D424
+patch=1,EE,00465B3C,extended,9022D424
 
 //Quickchat
-patch=1,EE,00475568,word,9022D424
+patch=1,EE,00475568,extended,9022D424
 
 //Buddy climb
-patch=1,EE,00170364,word,9022D424
+patch=1,EE,00170364,extended,9022D424
 
 //Enable online objectives + dialogues
-patch=1,EE,0012FA88,word,9022D424
+patch=1,EE,0012FA88,extended,9022D424
 
 // CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20338AFC,extended,24020001
 
 //Unlock all levels
-//patch=1,EE,20338FC0,word,2002FFFF
+//patch=1,EE,20338FC0,extended,2002FFFF
 
 // FOR FUN!
 
 //Own agent on Bonus missions
-patch=1,EE,204B2590,word,00000000
-patch=1,EE,204B2594,word,00000000
-patch=1,EE,204B2598,word,00000000
-patch=1,EE,204B259C,word,00000000
+patch=1,EE,204B2590,extended,00000000
+patch=1,EE,204B2594,extended,00000000
+patch=1,EE,204B2598,extended,00000000
+patch=1,EE,204B259C,extended,00000000
 //Enable equiping weapons on Bonus missions
-patch=1,EE,204B25B0,word,00000000
-patch=1,EE,204B25B4,word,00000000
-patch=1,EE,204B25B8,word,00000000
-patch=1,EE,204B25BC,word,00000000
+patch=1,EE,204B25B0,extended,00000000
+patch=1,EE,204B25B4,extended,00000000
+patch=1,EE,204B25B8,extended,00000000
+patch=1,EE,204B25BC,extended,00000000
 
 //Enable all spawns
-//patch=1,EE,201B483C,word,0C0FAD7C
+//patch=1,EE,201B483C,extended,0C0FAD7C
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,001C6E40,word,10600003
+//patch=1,EE,001C6E40,extended,10600003
 
 //Toss Body instead of laying it down
-patch=1,EE,001ACA98,word,2402002C
+patch=1,EE,001ACA98,extended,2402002C
 
 // EXPERIMENTAL
 
 //Enable Online lobby.
-//patch=1,EE,202A350C,word,24A52230
-//patch=1,EE,202A3514,word,24C62248
+//patch=1,EE,202A350C,extended,24A52230
+//patch=1,EE,202A3514,extended,24C62248
 
 //0 = Offline; 1 = Online
 //patch=1,EE,205AA3E0,byte,0
 
 //Enable Mission Setup
-//patch=1,EE,20296FD4,word,00000000
-//patch=1,EE,202AB490,word,00000000
+//patch=1,EE,20296FD4,extended,00000000
+//patch=1,EE,202AB490,extended,00000000
 //Enable Join Mission
-//patch=1,EE,20298914,word,8C242498
+//patch=1,EE,20298914,extended,8C242498
