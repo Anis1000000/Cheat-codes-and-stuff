@@ -4,9 +4,6 @@ comment=YukiXXL
 //PAL video mode
 patch=1,EE,20175F24,extended,1440000A
 
-//Fake byte
-patch=1,EE,0058F8E4,byte,1
-
 //DNAS Bypass
 patch=1,EE,20384D30,extended,03E00008
 patch=1,EE,20384D34,extended,00000000
@@ -14,6 +11,10 @@ patch=1,EE,20384D34,extended,00000000
 //Enable TEST button
 patch=1,EE,202A53FC,extended,8C2480F8
 
+//Fake Byte
+patch=1,EE,0058F8E4,byte,1
+
+// Fake Byte code is needed for these codes to work !
 //Marks and Eff award
 patch=1,EE,10471740,extended,9022F8E4
 
@@ -29,7 +30,14 @@ patch=1,EE,10170444,extended,9022F8E4
 //Enable online objectives + dialogues
 patch=1,EE,1012FA88,extended,9022F8E4
 
-//FOR FUN!
+// CHEATS!
+//All weapons
+patch=1,EE,2033ACBC,extended,24020001
+
+//Unlock all levels
+patch=1,EE,2033B180,extended,2002FFFF
+
+// FOR FUN!
 
 //Own agent on Bonus missions
 patch=1,EE,204B8170,extended,00000000
@@ -52,14 +60,7 @@ patch=1,EE,204B819C,extended,00000000
 //Toss Body
 //patch=1,EE,001ACC68,extended,2402002C
 
-//CHEATS!
-//All weapons
-patch=1,EE,2033ACBC,extended,24020001
-
-//Unlock all levels
-patch=1,EE,2033B180,extended,2002FFFF
-
-//EXPERIMENTAL
+// EXPERIMENTAL
 
 //Online Lobby
 //patch=1,EE,202A4750,extended,24A57E30
