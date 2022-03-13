@@ -1,13 +1,14 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 2
 comment=by YukiXXL
 
-//Fake Byte
-patch=1,EE,00574884,byte,1
-
 //Enable TEST button
 patch=1,EE,202A0064,extended,8C24B928
 patch=1,EE,20505B28,byte,0
 
+// Fake Byte
+patch=1,EE,00574884,byte,1
+
+// Fake Byte code is needed for these codes to work !
 //Marks and Eff award
 patch=1,EE,004653A0,extended,90224884
 
@@ -20,7 +21,7 @@ patch=1,EE,0045EE9C,extended,90224884
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,90224884
 
-//CHEATS!
+// CHEATS!
 //Open weapons
 patch=1,EE,2033343C,extended,24020001
 
@@ -30,7 +31,7 @@ patch=1,EE,2033343C,extended,24020001
 //Stop timer
 //patch=1,EE,2023A944,extended,24003634
 
-//EXPERIMENTAL
+// EXPERIMENTAL
 
 //0-Offline;1-Online
 //patch=1,EE,205A17E0,byte,0
