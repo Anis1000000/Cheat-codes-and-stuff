@@ -2,48 +2,48 @@ gametitle=SFOS USA
 comment=by YukiXXL
 
 //Online controller (Otherwise, almost everything here breaks)
-patch=1,EE,201B7020,word,00000000
+patch=1,EE,001B7020,extended,902221C4
 
 //Mission end fix (Otherwise black screen when using above code)
-patch=1,EE,2012ED84,word,00000000
+patch=1,EE,0012ED84,extended,902221C4
 
 //Quickchat enabled
-patch=1,EE,20464D48,word,00000000
+patch=1,EE,00464D44,extended,902221C4
 //fix for showing codename
-patch=1,EE,202B155C,word,00000000
+patch=1,EE,002B1558,extended,902221C4
 
 //Radio (when killed)
-patch=1,EE,2018C818,word,00000000
+patch=1,EE,0018C814,extended,902221C4
 
 //Show codename on the right
-patch=1,EE,2045E33C,word,00000000
+patch=1,EE,0045E33C,extended,902221C4
 
 //Minimap fix
-patch=1,EE,2026DAE8,word,00000000
-patch=1,EE,202C91B8,word,00000000
+patch=1,EE,0026DAE4,extended,902221C4
+patch=1,EE,002C91B4,extended,902221C4
 
 //Stats
-patch=1,EE,20456438,word,00000000
-patch=1,EE,2046241C,word,00000000
+patch=1,EE,00456434,extended,902221C4
+patch=1,EE,00462418,extended,902221C4
 
 //End mission
 //Marks and Eff award
-patch=1,EE,204633C4,word,00000000
+patch=1,EE,004633C0,extended,902221C4
 //<Codename> managed to not get killed
-patch=1,EE,204635A4,word,00000000
+patch=1,EE,004635A0,extended,902221C4
 
 //Equipment setup
 //Beginning at it (Can crash if disabled when using codenames)
-patch=1,EE,201685DC,word,00000000
+patch=1,EE,001685D8,extended,902221C4
 //After pressing square or triangle
-patch=1,EE,202BCD28,word,00000000
-patch=1,EE,202BCDFC,word,00000000
+patch=1,EE,002BCD24,extended,902221C4
+patch=1,EE,002BCDF8,extended,902221C4
 
 //Codename spelling and dependecies
-patch=1,EE,2013681C,word,00000000
-patch=1,EE,20185c88,word,00000000
-patch=1,EE,2012EE58,word,00000000
+patch=1,EE,0013681C,extended,902221C4
+patch=1,EE,00185C84,extended,902221C4
+patch=1,EE,0012EE54,extended,902221C4
 
 //Codename
 //Cobra=0; Python=1; Viper=2; Dragon=3
-patch=1,EE,20494178,word,00000003
+patch=1,EE,20494178,extended,00000003
