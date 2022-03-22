@@ -1,0 +1,34 @@
+gametitle=SFOS USA
+comment=by YukiXXL
+
+//Enable Online lobby in offline.
+patch=1,EE,202A0244,extended,24A5AEB0
+patch=1,EE,202A024C,extended,24C6AEC8
+
+//Fake Byte
+patch=1,EE,005721C4,byte,1
+
+// Fake Byte code is needed for these codes to work !
+//Quickchat
+patch=1,EE,00464D44,extended,902221C4
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F818,extended,902221C4
+
+//Buddy Climb
+patch=1,EE,00171894,extended,902221C4
+//Animation Change
+patch=1,EE,0018D734,extended,24030031
+
+//Write Solo + Team Par (condition check)
+patch=1,EE,20335A70,extended,3C010057
+patch=1,EE,20335A74,extended,14600030
+patch=1,EE,20335A78,extended,AC2321CC
+patch=1,EE,20335A7C,extended,080CD6B6
+patch=1,EE,20335BA4,extended,902421CC
+patch=1,EE,20335BAC,extended,1480FFEE
+
+//B2 Pick 2 C4s
+patch=1,EE,003D9BC4,extended,24060002
+//B2 Plant 2 C4s
+patch=1,EE,203D9B0C,extended,1C600018
