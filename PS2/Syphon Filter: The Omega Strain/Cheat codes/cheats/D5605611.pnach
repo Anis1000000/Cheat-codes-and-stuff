@@ -48,9 +48,6 @@ patch=1,EE,204ACBD4,extended,00000000
 patch=1,EE,204ACBD8,extended,00000000
 patch=1,EE,204ACBDC,extended,00000000
 
-//B2 Plant C4s out of ass
-//patch=1,EE,203D9AE0,word,00000000
-
 //Enable all spawns
 //patch=1,EE,201B422C,extended,0C0F2708
 
@@ -65,10 +62,6 @@ patch=1,EE,204ACBDC,extended,00000000
 patch=1,EE,001AC528,extended,2402002C
 
 // EXPERIMENTAL
-
-//Enable Online lobby.
-//patch=1,EE,202A0244,extended,24A5AEB0
-//patch=1,EE,202A024C,extended,24C6AEC8
 
 //Enable Mission Setup offline
 //patch=1,EE,20295D3C,extended,00000000
