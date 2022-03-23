@@ -1,0 +1,93 @@
+gametitle=SFOS USA
+comment=by YukiXXL
+
+//Menu stuff
+
+//Enable Online lobby in offline.
+patch=1,EE,202A0244,extended,24A5AEB0
+patch=1,EE,202A024C,extended,24C6AEC8
+patch=1,EE,202CB774,extended,10000010
+
+//All levels available in online mode
+patch=1,EE,204ACC70,word,01010101
+patch=1,EE,204ACC74,word,01010101
+patch=1,EE,204ACC78,word,01010101
+patch=1,EE,204ACC7C,word,01010101
+patch=1,EE,2029722C,word,0000102B
+
+//Enable Mission Setup offline
+patch=1,EE,20295D3C,extended,00000000
+
+//Join Mission = Play Mission
+patch=1,EE,20295E68,word,8C23FC04
+patch=1,EE,20295E6C,word,080A5774
+patch=1,EE,20295E70,word,00000000
+
+//Online, Offline enabler
+patch=1,EE,00167FF8,word,A02321C4
+patch=1,EE,001680A4,word,A02021C4
+
+//Gameplay stuff
+
+//Marks and Eff award
+patch=1,EE,004633C0,extended,902221C4
+
+//Enable value_codename
+patch=1,EE,0045E33C,extended,902221C4
+
+//Quickchat
+patch=1,EE,00464D44,extended,902221C4
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F818,extended,902221C4
+
+//Team Par
+patch=1,EE,00368CB8,word,902521C4
+patch=1,EE,00368D8C,word,902221C4
+
+//Checking objectives and writing Par time
+patch=1,EE,00335A78,word,902521C4
+patch=1,EE,00335B60,word,902221C4
+
+//Buddy Climb
+patch=1,EE,00171894,extended,902221C4
+//Animation Change
+patch=1,EE,0018D734,extended,24030031
+
+//Extra fixes for better gameplay
+
+//Online
+//B2 Pick 2 C4s & Plant 2 C4s
+patch=1,EE,E1010001,extended,005721C4
+patch=1,EE,203D9AE0,extended,00000000
+
+//Own agent on Bonus missions
+patch=1,EE,E1040001,extended,005721C4
+patch=1,EE,204ACBB0,extended,00000000
+patch=1,EE,204ACBB4,extended,00000000
+patch=1,EE,204ACBB8,extended,00000000
+patch=1,EE,204ACBBC,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040001,extended,005721C4
+patch=1,EE,204ACBD0,extended,00000000
+patch=1,EE,204ACBD4,extended,00000000
+patch=1,EE,204ACBD8,extended,00000000
+patch=1,EE,204ACBDC,extended,00000000
+
+//Offline
+//B2 Pick 2 C4s & Plant 2 C4s
+patch=1,EE,E1010000,extended,005721C4
+patch=1,EE,203D9AE0,extended,0C0F8130
+
+//Own agent on Bonus missions
+patch=1,EE,E1040000,extended,005721C4
+patch=1,EE,204ACBB0,extended,01000000
+patch=1,EE,204ACBB4,extended,00010000
+patch=1,EE,204ACBB8,extended,00010000
+patch=1,EE,204ACBBC,extended,01000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040000,extended,005721C4
+patch=1,EE,204ACBD0,extended,01000000
+patch=1,EE,204ACBD4,extended,00010000
+patch=1,EE,204ACBD8,extended,00010000
+patch=1,EE,204ACBDC,extended,01000000
