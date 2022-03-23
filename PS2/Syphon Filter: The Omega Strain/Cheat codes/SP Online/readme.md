@@ -1,3 +1,5 @@
+# To activate SP mission, hold START+L1+R1 and press R2. To disable SP missions, hold START+L1+R1 and press L2.
+
 # Codes for playing Single Player missions online which are:
 - Training Center
 - Pescara, Italy (St. Cetteo Square)
