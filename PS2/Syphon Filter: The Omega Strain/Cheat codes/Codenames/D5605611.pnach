@@ -1,8 +1,27 @@
 gametitle=SFOS USA
 comment=by YukiXXL
 
+//Fake Byte
+patch=1,EE,005721C4,byte,1
+
+//Gameplay fixes
+
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,2016882C,extended,902221C4
+patch=1,EE,20168838,extended,00000000
+//isHost
+patch=1,EE,005721C0,byte,1
+//START button
+patch=1,EE,002A21E4,word,902221C4
+patch=1,EE,002A2264,word,24050000
+
+//Gameplay
+
 //Online controller (Otherwise, almost everything here breaks)
 patch=1,EE,001B7020,extended,902221C4
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F818,extended,902221C4
 
 //Mission end fix (Otherwise black screen when using above code)
 patch=1,EE,0012ED84,extended,902221C4
