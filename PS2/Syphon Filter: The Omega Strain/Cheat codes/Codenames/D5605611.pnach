@@ -14,6 +14,8 @@ patch=1,EE,005721C0,byte,1
 //START button
 patch=1,EE,002A21E4,word,902221C4
 patch=1,EE,002A2264,word,24050000
+//Quit fix
+patch=1,EE,0013489C,word,902221C4
 
 //Gameplay
 
