@@ -9,45 +9,46 @@ patch=1,EE,202A024C,extended,24C6AEC8
 patch=1,EE,202CB774,extended,10000010
 
 //All levels available in online mode
-patch=1,EE,204ACC70,word,01010101
-patch=1,EE,204ACC74,word,01010101
-patch=1,EE,204ACC78,word,01010101
-patch=1,EE,204ACC7C,word,01010101
-patch=1,EE,2029722C,word,0000102B
+patch=1,EE,204ACC70,extended,01010101
+patch=1,EE,204ACC74,extended,01010101
+patch=1,EE,204ACC78,extended,01010101
+patch=1,EE,204ACC7C,extended,01010101
+patch=1,EE,2029722C,extended,0000102B
 
 //Enable Mission Setup offline
-patch=1,EE,20295D3C,extended,00000000
+patch=1,EE,00295D38,extended,90620030
 
 //Join Mission = Play Mission
-patch=1,EE,20295E68,word,8C23FC04
-patch=1,EE,20295E6C,word,080A5774
-patch=1,EE,20295E70,word,00000000
+patch=1,EE,20295E68,extended,8C23FC04
+patch=1,EE,20295E6C,extended,080A5774
+patch=1,EE,20295E70,extended,00000000
 
 //Online, Offline enabler
-patch=1,EE,00167FF8,word,A02321C4
-patch=1,EE,001680A4,word,A02021C4
+patch=1,EE,00167FF8,extended,A02321C4
+patch=1,EE,001680A4,extended,A02021C4
+
+//Codename changer
+patch=1,EE,202A0FA4,extended,3C010049
+patch=1,EE,202A0FA8,extended,2483FFFF
+patch=1,EE,202A0FAC,extended,AC234178
+//Don't change on exit
+patch=1,EE,2042B25C,word,00000000
+
+//Min num agents = 1
+patch=1,EE,002A159C,extended,24050001
 
 //Gameplay stuff
-
-//Marks and Eff award
-patch=1,EE,004633C0,extended,902221C4
-
-//Enable value_codename
-patch=1,EE,0045E33C,extended,902221C4
-
-//Quickchat
-patch=1,EE,00464D44,extended,902221C4
 
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,902221C4
 
 //Team Par
-patch=1,EE,00368CB8,word,902521C4
-patch=1,EE,00368D8C,word,902221C4
+patch=1,EE,00368CB8,extended,902521C4
+patch=1,EE,00368D8C,extended,902221C4
 
 //Checking objectives and writing Par time
-patch=1,EE,00335A78,word,902521C4
-patch=1,EE,00335B60,word,902221C4
+patch=1,EE,00335A78,extended,902521C4
+patch=1,EE,00335B60,extended,902221C4
 
 //Buddy Climb
 patch=1,EE,00171894,extended,902221C4
@@ -91,3 +92,61 @@ patch=1,EE,204ACBD0,extended,01000000
 patch=1,EE,204ACBD4,extended,00010000
 patch=1,EE,204ACBD8,extended,00010000
 patch=1,EE,204ACBDC,extended,01000000
+
+//***Codename stuff***
+
+//Gameplay fixes
+
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,2016882C,extended,902221C4
+patch=1,EE,20168838,extended,00000000
+//START button
+patch=1,EE,002A21E4,word,902221C4
+patch=1,EE,002A2264,word,24050000
+//Quit fix
+patch=1,EE,0013489C,word,902221C4
+
+//Gameplay
+
+//Online controller (Otherwise, almost everything here breaks)
+patch=1,EE,001B7020,extended,902221C4
+
+//Mission end fix (Otherwise black screen when using above code)
+patch=1,EE,0012ED84,extended,902221C4
+
+//Quickchat enabled
+patch=1,EE,00464D44,extended,902221C4
+//fix for showing codename
+patch=1,EE,002B1558,extended,902221C4
+
+//Radio (when killed)
+patch=1,EE,0018C814,extended,902221C4
+
+//Show codename on the right
+patch=1,EE,0045E33C,extended,902221C4
+
+//Minimap fix
+patch=1,EE,0026DAE4,extended,902221C4
+patch=1,EE,002C91B4,extended,902221C4
+
+//Stats
+patch=1,EE,00456434,extended,902221C4
+patch=1,EE,00462418,extended,902221C4
+
+//End mission
+//Marks and Eff award
+patch=1,EE,004633C0,extended,902221C4
+//<Codename> managed to not get killed
+patch=1,EE,004635A0,extended,902221C4
+
+//Equipment setup
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001685D8,extended,902221C4
+//After pressing square or triangle
+patch=1,EE,002BCD24,extended,902221C4
+patch=1,EE,002BCDF8,extended,902221C4
+
+//Codename spelling and dependecies
+patch=1,EE,0013681C,extended,902221C4
+patch=1,EE,00185C84,extended,902221C4
+patch=1,EE,0012EE54,extended,902221C4
