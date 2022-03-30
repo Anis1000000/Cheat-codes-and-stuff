@@ -96,7 +96,16 @@ patch=1,EE,204ACBDC,extended,01000000
 
 //***Codename stuff***
 
-//Gameplay fixes
+//Menu
+
+//Equipment setup
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001685D8,extended,902221C4
+//After pressing square or triangle
+patch=1,EE,002BCD24,extended,902221C4
+patch=1,EE,002BCDF8,extended,902221C4
+
+//Fixes
 
 //Belarus 2 C4 stacks bug fix
 patch=1,EE,0016882C,extended,902221C4
@@ -139,13 +148,6 @@ patch=1,EE,00462418,extended,902221C4
 patch=1,EE,004633C0,extended,902221C4
 //<Codename> managed to not get killed
 patch=1,EE,004635A0,extended,902221C4
-
-//Equipment setup
-//Beginning at it (Can crash if disabled when using codenames)
-patch=1,EE,001685D8,extended,902221C4
-//After pressing square or triangle
-patch=1,EE,002BCD24,extended,902221C4
-patch=1,EE,002BCDF8,extended,902221C4
 
 //Codename spelling and dependecies
 patch=1,EE,0013681C,extended,902221C4
