@@ -101,15 +101,15 @@ patch=1,EE,204ACBDC,extended,01000000
 //Quickchat enabled
 patch=1,EE,00464D44,extended,902221C4
 //fix for showing codename
-patch=1,EE,202B1560,extended,3C010049
-patch=1,EE,202B15B8,extended,8C224178
+patch=1,EE,202B15B8,extended,3C010049
+patch=1,EE,202B15BC,extended,8C224178
 
 //Show codename on the right
 patch=1,EE,0045E33C,extended,902221C4
 
-//Codename radio
-patch=1,EE,2018C81C,extended,3C010049
-patch=1,EE,2018C870,extended,8C224178
+//Radio (when killed)
+patch=1,EE,2018C870,extended,3C010049
+patch=1,EE,2018C874,extended,8C224178
 
 //Minimap fix
 patch=1,EE,2026DB40,extended,3C010049
@@ -118,9 +118,8 @@ patch=1,EE,202C9210,extended,3C010049
 patch=1,EE,202C9214,extended,8C234178
 
 //Fix codename on Status
-patch=1,EE,2035C094,extended,3C010049
-patch=1,EE,2035C09C,extended,8C344178
-patch=1,EE,2035C13C,extended,0280302D
+patch=1,EE,2035C134,extended,3C010049
+patch=1,EE,2035C13C,extended,8C264178
 
 //End mission
 
