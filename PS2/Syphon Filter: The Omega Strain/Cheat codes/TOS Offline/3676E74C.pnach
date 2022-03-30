@@ -47,7 +47,7 @@ patch=1,EE,0046D348,extended,9025F8E4
 patch=1,EE,0046D41C,extended,9022F8E4
 
 //Checking objectives and writing Par time
-patch=1,EE,0033DC80,extended,9025F8E4
+//patch=1,EE,0033DC80,extended,9025F8E4
 patch=1,EE,0033DD68,extended,9022F8E4
 
 //Buddy Climb
@@ -59,7 +59,7 @@ patch=1,EE,0018DE6C,extended,24030031
 
 //Online
 //B2 Unlimited C4s ON
-patch=1,EE,E1010001,extended,0058F8E4
+patch=1,EE,D058F8E4,extended,00000001
 patch=1,EE,203FF0F0,extended,00000000
 
 //Own agent on Bonus missions
@@ -77,7 +77,7 @@ patch=1,EE,204B819C,extended,00000000
 
 //Offline
 //B2 Unlimited C4s OFF
-patch=1,EE,E1010000,extended,0058F8E4
+patch=1,EE,D058F8E4,extended,00000000
 patch=1,EE,203D9AE0,extended,0C1016D4
 
 //Own agent on Bonus missions
@@ -95,6 +95,12 @@ patch=1,EE,204B819C,extended,01000000
 
 //***Codename stuff***
 
+//Online controller (Otherwise, almost everything here breaks)
+patch=1,EE,001B77D0,extended,9022F8E4
+
+//Mission end fix (Otherwise black screen when using above code)
+patch=1,EE,0012EFF4,extended,9022F8E4
+
 //Menu
 
 //Equipment setup
@@ -103,6 +109,10 @@ patch=1,EE,00178EA0,extended,9022F8E4
 //After pressing square or triangle
 patch=1,EE,002C9614,extended,9022F8E4
 patch=1,EE,002C96E8,extended,9022F8E4
+
+//Stats
+patch=1,EE,00376DD4,extended,9022F8E4
+patch=1,EE,00470798,extended,9022F8E4
 
 //Fixes
 
@@ -116,12 +126,6 @@ patch=1,EE,002AE4D4,extended,24050000
 patch=1,EE,00134C2C,extended,9022F8E4
 
 //Gameplay
-
-//Online controller (Otherwise, almost everything here breaks)
-patch=1,EE,001B77D0,extended,9022F8E4
-
-//Mission end fix (Otherwise black screen when using above code)
-patch=1,EE,0012EFF4,extended,9022F8E4
 
 //Quickchat enabled
 patch=1,EE,0047ACD8,extended,9022F8E4
@@ -138,17 +142,13 @@ patch=1,EE,0046B1DC,extended,9022F8E4
 patch=1,EE,0026E304,extended,9022F8E4
 patch=1,EE,002A72E4,extended,9022F8E4
 
-//Stats
-patch=1,EE,00376DD4,extended,9022F8E4
-patch=1,EE,00470798,extended,9022F8E4
+//Codename spelling and dependecies
+patch=1,EE,00136BCC,extended,9022F8E4
+patch=1,EE,00186284,extended,9022F8E4
+patch=1,EE,0012F0C4,extended,9022F8E4
 
 //End mission
 //Marks and Eff award
 patch=1,EE,00471740,extended,9022F8E4
 //<Codename> managed to not get killed
 patch=1,EE,00471920,extended,9022F8E4
-
-//Codename spelling and dependecies
-patch=1,EE,00136BCC,extended,9022F8E4
-patch=1,EE,00186284,extended,9022F8E4
-patch=1,EE,0012F0C4,extended,9022F8E4
