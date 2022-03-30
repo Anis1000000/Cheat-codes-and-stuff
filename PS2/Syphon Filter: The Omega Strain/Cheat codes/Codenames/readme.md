@@ -5,8 +5,6 @@
 ## DISCLAIMER ! I cannot test the codes on real hardware so I cannot promise that it works without crashes/freezes.
 
 ### .pnach files with game version:
-- 0DDA2728 - Public Beta 2
 - 27E54B37 - Europe/PAL
 - 3676E74C - Korean/NTSC
-- C909A32E - Public Beta 1
 - D5605611 - USA/NTSC
