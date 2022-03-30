@@ -58,12 +58,12 @@ patch=1,EE,00189D24,extended,2403002F
 //Extra fixes for better gameplay
 
 //Online
-//Infinite C4
+//B2 Unlimited C4s ON
 patch=1,EE,D052FCE4,extended,00000001
 patch=1,EE,203C8950,extended,00000000
 
 //Offline
-//Infinite C4
+//B2 Unlimited C4s OFF
 patch=1,EE,D052FCE4,extended,00000000
 patch=1,EE,203C8950,extended,0C0F3A3C
 
