@@ -77,6 +77,10 @@ patch=1,EE,001789B8,extended,90224884
 patch=1,EE,002C3084,extended,90224884
 patch=1,EE,002C3158,extended,90224884
 
+//Stats
+patch=1,EE,0036E1F4,extended,90224884
+patch=1,EE,004643F8,extended,90224884
+
 //Fixes
 
 //Belarus 2 C4 stacks bug fix
@@ -102,10 +106,6 @@ patch=1,EE,0045EE9C,extended,90224884
 //Minimap fix
 patch=1,EE,0026D9F4,extended,90234884
 patch=1,EE,002A19D4,extended,90234884
-
-//Stats
-patch=1,EE,0036E1F4,extended,90224884
-patch=1,EE,004643F8,extended,90224884
 
 //Codename spelling and dependecies
 patch=1,EE,0012EE54,extended,90234884
