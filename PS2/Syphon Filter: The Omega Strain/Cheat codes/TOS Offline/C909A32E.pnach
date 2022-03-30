@@ -1,0 +1,132 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1
+comment=by YukiXXL
+
+//Menu stuff
+
+//Enable Online lobby in offline.
+patch=1,EE,2028B16C,extended,24A5FA20
+patch=1,EE,2028B174,extended,24C6FA38
+patch=1,EE,2028EE44,extended,10000010
+
+//Enable Mission Setup offline
+patch=1,EE,00281628,extended,9062002E
+
+//Join Mission = Play Mission
+patch=1,EE,20281780,extended,8C23C3F0
+patch=1,EE,20281784,extended,080A05B0
+patch=1,EE,20281788,extended,00000000
+
+//Online, Offline enabler
+patch=1,EE,0013450C,extended,A020FCE4
+patch=1,EE,001743FC,extended,A023FCE4
+
+//Codename changer
+//Cobra
+patch=1,EE,D055CC2C,extended,00000001
+patch=1,EE,2045D028,extended,00000000
+//Python
+patch=1,EE,D055CC2C,extended,00000002
+patch=1,EE,2045D028,extended,00000001
+//Viper
+patch=1,EE,D055CC2C,extended,00000003
+patch=1,EE,2045D028,extended,00000002
+//Dragon
+patch=1,EE,D055CC2C,extended,00000004
+patch=1,EE,2045D028,extended,00000003
+
+//Min num agents = 1
+patch=1,EE,00291E0C,extended,24050001
+
+//Gameplay stuff
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F5C8,extended,9022fce4
+
+//Team Par
+patch=1,EE,0042C1B0,extended,9025FCE4
+patch=1,EE,0042C284,extended,9022FCE4
+
+//Checking objectives and writing Par time
+//patch=1,EE,00314E98,extended,9025FCE4
+patch=1,EE,00314F80,extended,9022FCE4
+
+//Buddy Climb
+patch=1,EE,0016C2F4,extended,9022FCE4
+//Animation Change
+patch=1,EE,00189D24,extended,2403002F
+
+//Extra fixes for better gameplay
+
+//Online
+//Infinite C4
+patch=1,EE,D052FCE4,extended,00000001
+patch=1,EE,203C8950,extended,00000000
+
+//Offline
+//Infinite C4
+patch=1,EE,D052FCE4,extended,00000000
+patch=1,EE,203C8950,extended,0C0F3A3C
+
+//***Codename stuff***
+
+//Online controller (Otherwise, almost everything here breaks)
+patch=1,EE,001AE550,extended,9024FCE4
+
+//Mission end fix (Otherwise black screen when using above code)
+patch=1,EE,0012EC94,extended,9022FCE4
+
+//Menu
+
+//EQS_Countdown
+patch=1,EE,004C8738,extended,00000001
+
+//Equipment setup
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,00174968,extended,9022FCE4
+//After pressing square or triangle
+patch=1,EE,002ABF14,extended,9022FCE4
+patch=1,EE,002ABFE0,extended,9022FCE4
+
+//Stats
+patch=1,EE,0034A6EC,extended,9022FCE4
+patch=1,EE,0042F4B8,extended,9022FCE4
+
+//Gameplay
+
+//Quickchat enabled
+patch=1,EE,00232DAC,extended,9022FCE4
+//fix for showing codename
+patch=1,EE,002A0A60,extended,9022FCE4
+
+//Radio (when killed)
+patch=1,EE,00188D4C,extended,9022FCE4
+
+//Show codename on the right
+patch=1,EE,0042A15C,extended,9022FCE4
+
+//Minimap fix
+patch=1,EE,0025C9D4,extended,9023FCE4
+patch=1,EE,0028C544,extended,9023FCE4
+
+//Codename spelling and dependecies
+patch=1,EE,0012ED64,extended,9023FCE4
+patch=1,EE,00135BB4,extended,9023FCE4
+patch=1,EE,00180E74,extended,9022FCE4
+
+//End mission
+
+//Marks and Eff award
+patch=1,EE,004303F0,extended,9022FCE4
+//<Codename> managed to not get killed
+patch=1,EE,004305D0,extended,9022FCE4
+//<Codename> collateral.
+patch=1,EE,0042F5BC,extended,9022FCE4
+
+//CHEATS!
+
+//Don't receive damage (L3 - Activate; R3 - Deactivate)
+patch=1,EE,D05183DC,extended,0000FFFD
+patch=1,EE,20182938,extended,00000000
+//
+patch=1,EE,D05183DC,extended,0000FFFB
+patch=1,EE,20182938,extended,0C0EF300
