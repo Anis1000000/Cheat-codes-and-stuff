@@ -58,8 +58,8 @@ patch=1,EE,0018D734,extended,24030031
 //Extra fixes for better gameplay
 
 //Online
-//B2 Pick 2 C4s & Plant 2 C4s
-patch=1,EE,E1010001,extended,005721C4
+//B2 Unlimited C4s ON
+patch=1,EE,D05721C4,extended,00000001
 patch=1,EE,203D9AE0,extended,00000000
 
 //Own agent on Bonus missions
@@ -76,8 +76,8 @@ patch=1,EE,204ACBD8,extended,00000000
 patch=1,EE,204ACBDC,extended,00000000
 
 //Offline
-//B2 Pick 2 C4s & Plant 2 C4s
-patch=1,EE,E1010000,extended,005721C4
+//B2 Unlimited C4s OFF
+patch=1,EE,D05721C4,extended,00000000
 patch=1,EE,203D9AE0,extended,0C0F8130
 
 //Own agent on Bonus missions
@@ -95,6 +95,12 @@ patch=1,EE,204ACBDC,extended,01000000
 
 
 //***Codenames stuff***
+
+//Menu
+
+//Status
+patch=1,EE,2035C134,extended,3C010049
+patch=1,EE,2035C13C,extended,8C264178
 
 //Gameplay
 
@@ -116,10 +122,6 @@ patch=1,EE,2026DB40,extended,3C010049
 patch=1,EE,2026DB44,extended,8C254178
 patch=1,EE,202C9210,extended,3C010049
 patch=1,EE,202C9214,extended,8C234178
-
-//Fix codename on Status
-patch=1,EE,2035C134,extended,3C010049
-patch=1,EE,2035C13C,extended,8C264178
 
 //End mission
 
