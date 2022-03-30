@@ -51,16 +51,22 @@ patch=1,EE,0018D774,extended,24030031
 //Extra fixes for better gameplay
 
 //Online
-//B2 Infinite C4s
-patch=1,EE,E1010001,extended,00574884
+//B2 Unlimited C4s ON
+patch=1,EE,D0574884,extended,00000001
 patch=1,EE,203F49B0,extended,00000000
 
 //Offline
-//B2 Infinite C4s
-patch=1,EE,E1010000,extended,00574884
+//B2 Unlimited C4s OFF
+patch=1,EE,D0574884,extended,00000000
 patch=1,EE,203F49B0,extended,00000000
 
 //***Codename stuff***
+
+//Online controller (Otherwise, almost everything here breaks)
+patch=1,EE,001B7060,extended,90244884
+
+//Mission end fix (Otherwise black screen when using above code)
+patch=1,EE,0012ED84,extended,90224884
 
 //Menu
 
@@ -84,12 +90,6 @@ patch=1,EE,0013489C,extended,90224884
 
 //Gameplay
 
-//Online controller (Otherwise, almost everything here breaks)
-patch=1,EE,001B7060,extended,90244884
-
-//Mission end fix (Otherwise black screen when using above code)
-patch=1,EE,0012ED84,extended,90224884
-
 //Quickchat fix for showing codename
 patch=1,EE,002B78B8,extended,90224884
 
@@ -107,14 +107,14 @@ patch=1,EE,002A19D4,extended,90234884
 patch=1,EE,0036E1F4,extended,90224884
 patch=1,EE,004643F8,extended,90224884
 
+//Codename spelling and dependecies
+patch=1,EE,0012EE54,extended,90234884
+patch=1,EE,0013681C,extended,90234884
+patch=1,EE,00185CC4,extended,90224884
+
 //End mission
 
 //Marks and Eff award
 patch=1,EE,004653A0,extended,90224884
 //<Codename> managed to not get killed
 patch=1,EE,00465580,extended,90224884
-
-//Codename spelling and dependecies
-patch=1,EE,0012EE54,extended,90234884
-patch=1,EE,0013681C,extended,90234884
-patch=1,EE,00185CC4,extended,90224884
