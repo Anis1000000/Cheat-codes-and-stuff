@@ -59,7 +59,7 @@ patch=1,EE,0018DE6C,extended,24030031
 
 //Online
 //B2 Unlimited C4s ON
-patch=1,EE,E1010001,extended,0058F8E4
+patch=1,EE,D058F8E4,extended,00000001
 patch=1,EE,203FF0F0,extended,00000000
 
 //Own agent on Bonus missions
@@ -77,7 +77,7 @@ patch=1,EE,204B819C,extended,00000000
 
 //Offline
 //B2 Unlimited C4s OFF
-patch=1,EE,E1010000,extended,0058F8E4
+patch=1,EE,D058F8E4,extended,00000000
 patch=1,EE,203D9AE0,extended,0C1016D4
 
 //Own agent on Bonus missions
@@ -94,6 +94,12 @@ patch=1,EE,204B8198,extended,00010000
 patch=1,EE,204B819C,extended,01000000
 
 //***Codename stuff***
+
+//Menu
+
+//Status
+patch=1,EE,2036E1B4,extended,3C01004A
+patch=1,EE,2036E1BC,extended,8C2612A8
 
 //Gameplay
 
@@ -115,10 +121,6 @@ patch=1,EE,2026E360,extended,3C01004A
 patch=1,EE,2026E364,extended,8C2512A8
 patch=1,EE,202A7340,extended,3C01004A
 patch=1,EE,202A7344,extended,8C2312A8
-
-//Fix codename on Status
-patch=1,EE,2036E1B4,extended,3C01004A
-patch=1,EE,2036E1BC,extended,8C2612A8
 
 //End mission
 
