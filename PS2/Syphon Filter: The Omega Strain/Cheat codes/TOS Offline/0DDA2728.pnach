@@ -24,6 +24,7 @@ patch=1,EE,001783D8,extended,A0234884
 patch=1,EE,202A7294,extended,3C010049
 patch=1,EE,202A7298,extended,2483FFFF
 patch=1,EE,202A729C,extended,AC234518
+patch=1,EE,002A72A4,extended,1400005A
 //Don't change on exit
 patch=1,EE,204461DC,extended,00000000
 
@@ -68,7 +69,7 @@ patch=1,EE,203F49B0,extended,00000000
 patch=1,EE,001B7060,extended,90244884
 
 //Mission end fix (Otherwise black screen when using above code)
-patch=1,EE,0012ED84,extended,90224884
+//patch=1,EE,0012ED84,extended,90224884
 
 //Menu
 
