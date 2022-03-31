@@ -18,17 +18,6 @@ patch=1,EE,20332B5C,extended,00000000
 
 // FOR FUN!
 
-//Own agent on Bonus missions
-patch=1,EE,204ACBB0,extended,00000000
-patch=1,EE,204ACBB4,extended,00000000
-patch=1,EE,204ACBB8,extended,00000000
-patch=1,EE,204ACBBC,extended,00000000
-//Enable equiping weapons on Bonus missions
-patch=1,EE,204ACBD0,extended,00000000
-patch=1,EE,204ACBD4,extended,00000000
-patch=1,EE,204ACBD8,extended,00000000
-patch=1,EE,204ACBDC,extended,00000000
-
 //Fix changing weapons on Kyrgzstan and Chechnya
 //patch=1,EE,203E1A84,extended,00000000
 
