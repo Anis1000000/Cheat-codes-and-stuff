@@ -45,9 +45,11 @@ patch=1,EE,0012F818,extended,902221C4
 //Team Par
 patch=1,EE,00368CB8,extended,902521C4
 patch=1,EE,00368D8C,extended,902221C4
+//Check if completed Par
+patch=1,EE,00462594,extended,902521C4
 
 //Checking objectives and writing Par time
-patch=1,EE,00335A78,extended,902521C4
+//patch=1,EE,00335A78,extended,902521C4
 patch=1,EE,00335B60,extended,902221C4
 
 //Buddy Climb
@@ -58,8 +60,8 @@ patch=1,EE,0018D734,extended,24030031
 //Extra fixes for better gameplay
 
 //Online
-//B2 Unlimited C4s ON
-patch=1,EE,D05721C4,extended,00000001
+//B2 Pick 2 C4s & Plant 2 C4s
+patch=1,EE,E1010001,extended,005721C4
 patch=1,EE,203D9AE0,extended,00000000
 
 //Own agent on Bonus missions
@@ -76,8 +78,8 @@ patch=1,EE,204ACBD8,extended,00000000
 patch=1,EE,204ACBDC,extended,00000000
 
 //Offline
-//B2 Unlimited C4s OFF
-patch=1,EE,D05721C4,extended,00000000
+//B2 Pick 2 C4s & Plant 2 C4s
+patch=1,EE,E1010000,extended,005721C4
 patch=1,EE,203D9AE0,extended,0C0F8130
 
 //Own agent on Bonus missions
@@ -96,11 +98,15 @@ patch=1,EE,204ACBDC,extended,01000000
 
 //***Codenames stuff***
 
-//Menu
-
-//Status
-patch=1,EE,2035C134,extended,3C010049
-patch=1,EE,2035C13C,extended,8C264178
+//Codename joker codes
+patch=1,EE,200FFE1C,extended,902221C8
+patch=1,EE,200FFE20,extended,3C010049
+patch=1,EE,200FFE24,extended,8C374178
+patch=1,EE,200FFE28,extended,03E00008
+patch=1,EE,200FFE30,extended,3C010049
+patch=1,EE,200FFE34,extended,8C324178
+patch=1,EE,200FFE38,extended,0240302D
+patch=1,EE,200FFE3C,extended,03E00008
 
 //Gameplay
 
@@ -123,13 +129,16 @@ patch=1,EE,2026DB44,extended,8C254178
 patch=1,EE,202C9210,extended,3C010049
 patch=1,EE,202C9214,extended,8C234178
 
+//Status
+patch=1,EE,2035C13C,word,0C03FF8C
+
 //End mission
 
 //Load the codename
 patch=1,EE,204633C0,extended,3C020049
 patch=1,EE,204633C4,extended,8C574178
 patch=1,EE,204633C8,extended,10000071
-patch=1,EE,204633CC,extended,00000000
+patch=1,EE,204633CC,extended,0080982D
 //<Codename>
 patch=1,EE,204636C8,extended,26E60001
 //<Codename> managed to not get killed
@@ -137,3 +146,16 @@ patch=1,EE,2046374C,extended,26E70001
 //<Codename> collateral
 patch=1,EE,2046250C,extended,3C010049
 patch=1,EE,20462514,extended,8C314178
+
+//Medals and stuff
+//Load the register
+patch=1,EE,204604B4,extended,0C03FF87
+//Change the values
+patch=1,EE,204606F0,extended,26E60001
+patch=1,EE,20460774,extended,26E70001
+patch=1,EE,204607E0,extended,26E60001
+patch=1,EE,20460864,extended,26E70001
+patch=1,EE,204608D0,extended,26E60001
+patch=1,EE,20460954,extended,26E70001
+patch=1,EE,204609C0,extended,26E60001
+patch=1,EE,20460A44,extended,26E70001
