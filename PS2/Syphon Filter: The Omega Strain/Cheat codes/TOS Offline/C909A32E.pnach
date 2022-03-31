@@ -75,7 +75,7 @@ patch=1,EE,203C8950,extended,0C0F3A3C
 patch=1,EE,001AE550,extended,9024FCE4
 
 //Mission end fix (Otherwise black screen when using above code)
-patch=1,EE,0012EC94,extended,9022FCE4
+//patch=1,EE,0012EC94,extended,9022FCE4
 
 //Menu
 
