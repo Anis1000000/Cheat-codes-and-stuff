@@ -45,6 +45,8 @@ patch=1,EE,0012FA88,extended,9022F8E4
 //Team Par
 patch=1,EE,0046D348,extended,9025F8E4
 patch=1,EE,0046D41C,extended,9022F8E4
+//Check if completed Par
+patch=1,EE,00470914,extended,9025F8E4
 
 //Checking objectives and writing Par time
 //patch=1,EE,0033DC80,extended,9025F8E4
@@ -152,3 +154,5 @@ patch=1,EE,0012F0C4,extended,9022F8E4
 patch=1,EE,00471740,extended,9022F8E4
 //<Codename> managed to not get killed
 patch=1,EE,00471920,extended,9022F8E4
+//Medals and stuff
+patch=1,EE,0046E854,extended,9022F8E4
