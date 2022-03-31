@@ -5,22 +5,6 @@ comment=by YukiXXL
 patch=1,EE,202A0064,extended,8C24B928
 patch=1,EE,20505B28,byte,0
 
-// Fake Byte
-patch=1,EE,00574884,byte,1
-
-// Fake Byte code is needed for these codes to work !
-//Marks and Eff award
-patch=1,EE,004653A0,extended,90224884
-
-//Buddy climb
-patch=1,EE,0016FFC4,extended,90224884
-
-//value_codename
-patch=1,EE,0045EE9C,extended,90224884
-
-//Enable online objectives + dialogues
-patch=1,EE,0012F818,extended,90224884
-
 // CHEATS!
 //Open weapons
 patch=1,EE,2033343C,extended,24020001
@@ -35,10 +19,6 @@ patch=1,EE,2033343C,extended,24020001
 
 //0-Offline;1-Online
 //patch=1,EE,205A17E0,byte,0
-
-//Enable online lobby
-//patch=1,EE,2029F914,extended,24A5ACD0
-//patch=1,EE,2029F91C,extended,24C6ACE8
 
 //Mission Setup
 //patch=1,EE,2029523C,extended,00000000
