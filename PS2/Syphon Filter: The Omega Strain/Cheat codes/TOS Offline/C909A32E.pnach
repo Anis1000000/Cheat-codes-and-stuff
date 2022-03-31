@@ -1,7 +1,7 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 1
 comment=by YukiXXL
 
-//Menu stuff
+//Menu
 
 //Enable Online lobby in offline.
 patch=1,EE,2028B16C,extended,24A5FA20
@@ -37,7 +37,7 @@ patch=1,EE,2045D028,extended,00000003
 //Min num agents = 1
 patch=1,EE,00291E0C,extended,24050001
 
-//Gameplay stuff
+//Gameplay
 
 //Enable online objectives + dialogues
 patch=1,EE,0012F5C8,extended,9022fce4
@@ -100,7 +100,7 @@ patch=1,EE,00232DAC,extended,9022FCE4
 //fix for showing codename
 patch=1,EE,002A0A60,extended,9022FCE4
 
-//Radio (when killed)
+//Radio comms
 patch=1,EE,00188D4C,extended,9022FCE4
 
 //Show codename on the right
