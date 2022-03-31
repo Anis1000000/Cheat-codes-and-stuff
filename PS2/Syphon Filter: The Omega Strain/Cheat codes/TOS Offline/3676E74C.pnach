@@ -1,7 +1,7 @@
 gametitle=Syphon Filter: The Omega Virus
 comment=by YukiXXL
 
-//Menu stuff
+//Menu
 
 //Enable Online lobby in offline.
 patch=1,EE,202A4750,extended,24A57E30
@@ -37,7 +37,7 @@ patch=1,EE,2045215C,extended,00000000
 //Min num agents = 1
 patch=1,EE,002AD80C,extended,24050001
 
-//Gameplay stuff
+//Gameplay
 
 //Enable online objectives + dialogues
 patch=1,EE,0012FA88,extended,9022F8E4
@@ -134,7 +134,7 @@ patch=1,EE,0047ACD8,extended,9022F8E4
 //fix for showing codename
 patch=1,EE,002BDE48,extended,9022F8E4
 
-//Radio (when killed)
+//Radio comms
 patch=1,EE,0018CE94,extended,9022F8E4
 
 //Show codename on the right
