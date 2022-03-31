@@ -108,6 +108,11 @@ patch=1,EE,200FFE34,extended,8C324178
 patch=1,EE,200FFE38,extended,0240302D
 patch=1,EE,200FFE3C,extended,03E00008
 
+//Menu
+
+//Stats
+patch=1,EE,2035C13C,word,0C03FF8C
+
 //Gameplay
 
 //Quickchat enabled
@@ -128,9 +133,6 @@ patch=1,EE,2026DB40,extended,3C010049
 patch=1,EE,2026DB44,extended,8C254178
 patch=1,EE,202C9210,extended,3C010049
 patch=1,EE,202C9214,extended,8C234178
-
-//Status
-patch=1,EE,2035C13C,word,0C03FF8C
 
 //End mission
 
