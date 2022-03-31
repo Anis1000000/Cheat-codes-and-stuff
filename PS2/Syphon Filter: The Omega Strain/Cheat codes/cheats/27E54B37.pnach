@@ -10,25 +10,6 @@ patch=1,EE,20175E54,extended,1440000A
 //Enable TEST button (removed function)
 patch=1,EE,202A3E5C,extended,8C242858
 
-//Fake Byte
-patch=1,EE,0057D424,byte,1
-
-// Fake Byte code is needed for these codes to work !
-//Marks and Eff award
-patch=1,EE,2046C040,extended,9022D424
-
-//Enable value_codename
-patch=1,EE,00465B3C,extended,9022D424
-
-//Quickchat
-patch=1,EE,00475568,extended,9022D424
-
-//Buddy climb
-patch=1,EE,00170364,extended,9022D424
-
-//Enable online objectives + dialogues
-patch=1,EE,0012FA88,extended,9022D424
-
 // CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20338AFC,extended,24020001
@@ -36,18 +17,7 @@ patch=1,EE,20338AFC,extended,24020001
 //Unlock all levels
 //patch=1,EE,20338FC0,extended,2002FFFF
 
-// FOR FUN!
-
-//Own agent on Bonus missions
-patch=1,EE,204B2590,extended,00000000
-patch=1,EE,204B2594,extended,00000000
-patch=1,EE,204B2598,extended,00000000
-patch=1,EE,204B259C,extended,00000000
-//Enable equiping weapons on Bonus missions
-patch=1,EE,204B25B0,extended,00000000
-patch=1,EE,204B25B4,extended,00000000
-patch=1,EE,204B25B8,extended,00000000
-patch=1,EE,204B25BC,extended,00000000
+//FOR FUN!
 
 //Enable all spawns
 //patch=1,EE,201B483C,extended,0C0FAD7C
