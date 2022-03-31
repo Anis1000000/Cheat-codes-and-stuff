@@ -97,6 +97,10 @@ patch=1,EE,204B819C,extended,01000000
 
 //***Codename stuff***
 
+//Fix if -1
+patch=1,EE,D04A12A8,extended,FFFFFFFF
+patch=1,EE,204A12A8,extended,00000000
+
 //Codename joker codes
 patch=1,EE,200FFE1C,extended,9022F8E8
 patch=1,EE,200FFE20,extended,3C01004A
@@ -139,7 +143,7 @@ patch=1,EE,202A7344,extended,8C2312A8
 patch=1,EE,20471740,extended,3C01004A
 patch=1,EE,20471744,extended,8C3712A8
 patch=1,EE,20471748,extended,10000071
-patch=1,EE,2047174C,extended,00000000
+patch=1,EE,2047174C,extended,0080982D
 //<Codename>
 patch=1,EE,20471A48,extended,26E60001
 //<Codename> managed to not get killed
