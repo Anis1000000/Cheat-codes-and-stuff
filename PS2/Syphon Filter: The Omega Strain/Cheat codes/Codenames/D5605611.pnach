@@ -141,7 +141,7 @@ patch=1,EE,202C9214,extended,8C234178
 //End mission
 
 //Load the codename
-patch=1,EE,20463394,extended,3C010049
+patch=1,EE,00463394,extended,3C010049
 patch=1,EE,204633C0,extended,8C374178
 patch=1,EE,204633C4,extended,10000072
 //<Codename>
