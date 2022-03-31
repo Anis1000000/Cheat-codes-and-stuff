@@ -28,10 +28,9 @@ patch=1,EE,00135044,extended,A020D424
 patch=1,EE,00178780,extended,A023D424
 
 //Codename changer
-patch=1,EE,202AB474,extended,3C01004A
-patch=1,EE,202AB478,extended,2483FFFF
-patch=1,EE,202AB47C,extended,AC23B778
-patch=1,EE,202AB484,extended,10000082
+patch=1,EE,002AB46C,extended,3C01004A
+patch=1,EE,202AB474,extended,2483FFFF
+patch=1,EE,202AB478,extended,AC23B778
 //Don't change on exit
 patch=1,EE,2044CE7C,extended,00000000
 
