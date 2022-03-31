@@ -1,7 +1,7 @@
 gametitle=SFOS USA
 comment=by YukiXXL
 
-//Menu stuff
+//Menu
 
 //Enable Online lobby in offline.
 patch=1,EE,202A0244,extended,24A5AEB0
@@ -37,7 +37,7 @@ patch=1,EE,2042B25C,word,00000000
 //Min num agents = 1
 patch=1,EE,002A159C,extended,24050001
 
-//Gameplay stuff
+//Gameplay
 
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,902221C4
@@ -135,7 +135,7 @@ patch=1,EE,00464D44,extended,902221C4
 //fix for showing codename
 patch=1,EE,002B1558,extended,902221C4
 
-//Radio (when killed)
+//Radio comms
 patch=1,EE,0018C814,extended,902221C4
 
 //Show codename on the right
