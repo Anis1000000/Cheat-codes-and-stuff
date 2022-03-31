@@ -99,8 +99,8 @@ patch=1,EE,204ACBDC,extended,01000000
 //***Codenames stuff***
 
 //Fix if -1
-patch=1,EE,D0494178,extended,FFFFFFFF
-patch=1,EE,20494178,extended,00000000
+//patch=1,EE,D0494178,extended,0000FFFF
+//patch=1,EE,20494178,extended,00000000
 
 //Codename joker codes
 patch=1,EE,200FFE1C,extended,902221C8
