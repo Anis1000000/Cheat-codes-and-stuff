@@ -98,7 +98,7 @@ patch=1,EE,204ACBDC,extended,01000000
 
 //***Codenames stuff***
 
-//Fix if -1
+//Fix for not being Cobra offline
 //patch=1,EE,D0494178,extended,0000FFFF
 //patch=1,EE,20494178,extended,00000000
 
