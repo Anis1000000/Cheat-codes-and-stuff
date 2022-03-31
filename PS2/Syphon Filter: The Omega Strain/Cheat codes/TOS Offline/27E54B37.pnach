@@ -1,0 +1,159 @@
+gametitle=SFOS Europe (PAL)
+comment=by YukiXXL
+
+//Menu stuff
+
+//Enable Online lobby in offline.
+patch=1,EE,202A350C,extended,24A52230
+patch=1,EE,202A3514,extended,24C62248
+patch=1,EE,202A7F34,extended,10000010
+
+//All levels available in online mode
+patch=1,EE,204B2650,extended,01010101
+patch=1,EE,204B2654,extended,01010101
+patch=1,EE,204B2658,extended,01010101
+patch=1,EE,204B265C,extended,01010101
+patch=1,EE,2029864C,extended,0000102B
+
+//Enable Mission Setup offline
+patch=1,EE,00296FD0,extended,90620030
+
+//Join Mission = Play Mission
+patch=1,EE,20297100,extended,8C231C7C
+patch=1,EE,20297104,extended,080A5C1A
+patch=1,EE,20297108,extended,00000000
+
+//Online, Offline enabler
+patch=1,EE,00135044,extended,A020D424
+patch=1,EE,00178780,extended,A023D424
+
+//Codename changer
+patch=1,EE,202AB474,extended,3C01004A
+patch=1,EE,202AB478,extended,2483FFFF
+patch=1,EE,202AB47C,extended,AC23B778
+patch=1,EE,202AB484,extended,10000082
+//Don't change on exit
+patch=1,EE,2044CE7C,extended,00000000
+
+//Min num agents = 1
+patch=1,EE,002ABB0C,extended,24050001
+
+//Gameplay stuff
+
+//Enable online objectives + dialogues
+patch=1,EE,0012FA88,extended,9022D424
+
+//Team Par
+patch=1,EE,00467C28,extended,9025D424
+patch=1,EE,00467CFC,extended,9022D424
+//Check if completed Par
+patch=1,EE,0046b214,extended,9025D424
+
+//Checking objectives and writing Par time
+//patch=1,EE,0033BA58,extended,9025D424
+patch=1,EE,0033BB40,extended,9022D424
+
+//Buddy Climb
+patch=1,EE,00170364,extended,9022D424
+//Animation Change
+patch=1,EE,0018DC9C,extended,24030031
+
+//Extra fixes for better gameplay
+
+//Online
+//B2 Unlimited C4s ON
+patch=1,EE,D022D424,extended,00000001
+patch=1,EE,203FB4F0,extended,00000000
+
+//Own agent on Bonus missions
+patch=1,EE,E1040001,extended,0022D424
+patch=1,EE,204B2590,extended,00000000
+patch=1,EE,204B2594,extended,00000000
+patch=1,EE,204B2598,extended,00000000
+patch=1,EE,204B259C,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040001,extended,0022D424
+patch=1,EE,204B25B0,extended,00000000
+patch=1,EE,204B25B4,extended,00000000
+patch=1,EE,204B25B8,extended,00000000
+patch=1,EE,204B25BC,extended,00000000
+
+//Offline
+//B2 Unlimited C4s OFF
+patch=1,EE,D022D424,extended,00000000
+patch=1,EE,203FB4F0,extended,0C1007B4
+
+//Own agent on Bonus missions
+patch=1,EE,E1040000,extended,0022D424
+patch=1,EE,204B2590,extended,00000000
+patch=1,EE,204B2594,extended,00000000
+patch=1,EE,204B2598,extended,00000000
+patch=1,EE,204B259C,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040000,extended,0022D424
+patch=1,EE,204B25B0,extended,00000000
+patch=1,EE,204B25B4,extended,00000000
+patch=1,EE,204B25B8,extended,00000000
+patch=1,EE,204B25BC,extended,00000000
+
+//***Codename stuff***
+
+//Online controller (Otherwise, almost everything here breaks)
+patch=1,EE,001B7650,extended,9024D424
+
+//Mission end fix (Otherwise black screen when using above code)
+//patch=1,EE,0012EFF4,extended,9022D424
+
+//Menu
+
+//Equipment setup
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,00178D60,extended,9022D424
+//After pressing square or triangle
+patch=1,EE,002C77F4,extended,9022D424
+patch=1,EE,002C78C8,extended,9022D424
+
+//Stats
+patch=1,EE,00374B54,extended,9022D424
+patch=1,EE,0046B098,extended,9022D424
+
+//Fixes
+
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,00178FB8,extended,9023D424
+patch=1,EE,20178FC4,extended,00000000
+//START button
+patch=1,EE,002AC754,extended,9022D424
+patch=1,EE,002AC7D4,extended,24050000
+//Quit fix
+patch=1,EE,00134B1C,extended,9022D424
+
+//Gameplay
+
+//Quickchat enabled
+patch=1,EE,00475568,extended,9022d424
+//fix for showing codename
+patch=1,EE,002BC018,extended,9022d424
+
+//Radio comms
+patch=1,EE,0018CCC4,extended,9022D424
+
+//Show codename on the right
+patch=1,EE,00465B3C,extended,9022D424
+
+//Minimap fix
+patch=1,EE,0026DF54,extended,9023D424
+patch=1,EE,002A5674,extended,9023D424
+
+//Codename spelling and dependecies
+patch=1,EE,0012F0C4,extended,9023D424
+patch=1,EE,00136ABC,extended,9023D424
+patch=1,EE,00186114,extended,9022D424
+
+//End mission
+//Marks and Eff award
+patch=1,EE,0046C040,extended,9022D424
+//<Codename> managed to not get killed
+patch=1,EE,0046C220,extended,9022D424
+//Medals and stuff
+patch=1,EE,00469134,extended,9022D424
