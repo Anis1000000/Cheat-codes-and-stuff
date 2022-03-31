@@ -149,7 +149,7 @@ patch=1,EE,204636C8,extended,26E60001
 //<Codename> managed to not get killed
 patch=1,EE,2046374C,extended,26E70001
 //<Codename> collateral
-patch=1,EE,2046250C,extended,3C010049
+patch=1,EE,0046250C,extended,3C010049
 patch=1,EE,20462514,extended,8C314178
 
 //Medals and stuff
