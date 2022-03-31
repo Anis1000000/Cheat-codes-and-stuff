@@ -5,10 +5,10 @@ comment=by YukiXXL
 patch=1,EE,207EE063,byte,31
 
 //BOOT_FRONTEND=1
-patch=1,EE,207EE219,byte,31
+//patch=1,EE,207EE219,byte,31
 
 //BOOT_INVULNERABLE=1
-patch=1,EE,207EE240,byte,31
+//patch=1,EE,207EE240,byte,31
 
 //USE_VALID_LEVELS=1
 //patch=1,EE,207EE12C,byte,31
@@ -19,28 +19,34 @@ patch=1,EE,207EE240,byte,31
 //RESTRICT_LEVELS=1
 //patch=1,EE,207EE08B,byte,31
 
-//Enable online lobby
-patch=1,EE,2033FA6C,word,24A53980
-patch=1,EE,2033FA74,word,24C63998
+//Menu
 
 //Enable LAN button
-patch=1,EE,20340058,word,8C2478E8
+patch=1,EE,20340058,extended,8C2478E8
 patch=1,EE,204E5D18,byte,0
+
+//Enable Mission Setup
+patch=1,EE,00338E4C,extended,9082002D
+//patch=1,EE,20343AA4,extended,00000000
+
+//Gameplay
+
+//FakeByte
+patch=1,EE,004B09D4,word,00000001
+
+//Quickchat
+patch=1,EE,002F0F6C,extended,902209D4
+
+//Buddy climb
+patch=1,EE,00240784,extended,902209D4
+//Animation change
+patch=1,EE,00258174,extended,2403002E
+
+// EXPERIMENTAL
 
 //0 = Offline; 1 = Online
 //patch=1,EE,20537C8D,byte,0
 
-//Enable Mission Setup
-patch=1,EE,20338E50,word,00000000
-//patch=1,EE,20343AA4,word,00000000
-//Enable Join Mission
-patch=1,EE,20339FA4,word,8C247698
-
-//Quickchat
-patch=1,EE,202F0F70,word,00000000
-
-//Buddy climb
-patch=1,EE,20240788,word,00000000
-
-//EqSetup
-patch=1,EE,2035B9D0,word,00000000
+//Enable online lobby
+//patch=1,EE,2033FA6C,extended,24A53980
+//patch=1,EE,2033FA74,extended,24C63998
