@@ -46,6 +46,10 @@ patch=1,EE,20313B3C,word,8c240888
 patch=1,EE,20313B6C,word,8c240890
 patch=1,EE,20313B9C,word,8c240898
 
+//Enable Online mode
+patch=1,EE,10315BE0,extended,24A5C6D0
+patch=1,EE,10315BE8,extended,24C6C6E8
+
 //Join mission
 patch=1,EE,2031342C,word,8c240850
 
@@ -58,11 +62,15 @@ patch=1,EE,203CB29C,word,00007966
 patch=1,EE,203CB2A0,word,4E454741
 patch=1,EE,203CB2A4,word,444F4D54
 
-//EqSetup
-patch=1,EE,2032FB90,word,00000000
+//Fake Byte
+patch=1,EE,004301BC,byte,1
+
+//FakeByte used for next codes
 
 //Quickchat
-patch=1,EE,202CAB1C,word,902301C0
+patch=1,EE,002CAB1C,extended,902201BC
 
 //Buddy climb
-patch=1,EE,20229BC4,word,902301C0
+patch=1,EE,00229BC4,extended,902201BC
+//Animation change
+patch=1,EE,00240EA4,extended,2403002D
