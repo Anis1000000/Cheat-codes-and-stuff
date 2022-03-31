@@ -31,6 +31,7 @@ patch=1,EE,001680A4,extended,A02021C4
 patch=1,EE,202A0FA4,extended,3C010049
 patch=1,EE,202A0FA8,extended,2483FFFF
 patch=1,EE,202A0FAC,extended,AC234178
+patch=1,EE,202A0FB4,extended,1400005A
 //Don't change on exit
 patch=1,EE,2042B25C,word,00000000
 
