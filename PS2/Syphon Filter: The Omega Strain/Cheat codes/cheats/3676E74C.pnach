@@ -4,10 +4,6 @@ comment=YukiXXL
 //PAL video mode
 patch=1,EE,20175F24,extended,1440000A
 
-//DNAS Bypass
-patch=1,EE,20384D30,extended,03E00008
-patch=1,EE,20384D34,extended,00000000
-
 //Enable TEST button
 patch=1,EE,202A53FC,extended,8C2480F8
 
