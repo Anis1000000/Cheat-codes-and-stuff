@@ -4,7 +4,7 @@ comment=by YukiXXL
 //Open levels
 patch=1,EE,203124A0,extended,24020001
 
-//Team Pars for all available levels
+//All Team Pars
 patch=1,EE,209881C4,word,0000019A
 patch=1,EE,209881E4,word,00000122
 patch=1,EE,20988204,word,000000AA
