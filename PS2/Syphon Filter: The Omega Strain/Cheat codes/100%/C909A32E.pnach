@@ -13,8 +13,6 @@ patch=1,EE,20988264,word,000001D6
 patch=1,EE,209882C4,word,000003F2
 patch=1,EE,20988344,word,00000212
 patch=1,EE,20988364,word,0000024E
-
-//Rest of the Team Pars
 patch=1,EE,209883C4,word,000001D6
 
 //All Solo Pars
