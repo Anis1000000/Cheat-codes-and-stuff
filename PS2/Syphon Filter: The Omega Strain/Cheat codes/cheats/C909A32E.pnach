@@ -42,7 +42,7 @@ patch=1,EE,2046FE00,word,00000101
 
 //CHEATS
 //Open Weapons
-//patch=1,EE,20311FCC,extended,24020001
+patch=1,EE,20311FCC,extended,24020001
 
 //LAN or ONLINE
 
