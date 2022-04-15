@@ -1,6 +1,6 @@
 # To activate SP mission, hold START+L1+R1 and press R2. To disable SP missions, hold START+L1+R1 and press L2.
 
-# It takes effect on Command Center so do it before getting to Command Center menu or in some other menu and then go back to Command Center.
+## It takes effect on Command Center so do it before getting to Command Center menu or in some other menu and then go back to Command Center.
 
 # Codes for playing Single Player missions online which are:
 - Training Center
