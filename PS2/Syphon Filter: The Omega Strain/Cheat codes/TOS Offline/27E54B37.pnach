@@ -60,9 +60,6 @@ patch=1,EE,0018DC9C,extended,24030031
 //Extra fixes for better gameplay
 
 //Online
-//B2 Unlimited C4s ON
-patch=1,EE,D022D424,extended,00000001
-patch=1,EE,203FB4F0,extended,00000000
 
 //Own agent on Bonus missions
 patch=1,EE,E1040001,extended,0022D424
@@ -78,9 +75,6 @@ patch=1,EE,204B25B8,extended,00000000
 patch=1,EE,204B25BC,extended,00000000
 
 //Offline
-//B2 Unlimited C4s OFF
-patch=1,EE,D022D424,extended,00000000
-patch=1,EE,203FB4F0,extended,0C1007B4
 
 //Own agent on Bonus missions
 patch=1,EE,E1040000,extended,0022D424
