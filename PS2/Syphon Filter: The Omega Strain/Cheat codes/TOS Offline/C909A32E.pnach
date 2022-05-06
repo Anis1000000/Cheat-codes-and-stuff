@@ -57,18 +57,6 @@ patch=1,EE,0016C2F4,extended,9022FCE4
 //Animation Change
 patch=1,EE,00189D24,extended,2403002F
 
-//Extra fixes for better gameplay
-
-//Online
-//B2 Unlimited C4s ON
-patch=1,EE,D052FCE4,extended,00000001
-patch=1,EE,203C8950,extended,00000000
-
-//Offline
-//B2 Unlimited C4s OFF
-patch=1,EE,D052FCE4,extended,00000000
-patch=1,EE,203C8950,extended,0C0F3A3C
-
 //***Codename stuff***
 
 //Online controller (Otherwise, almost everything here breaks)
