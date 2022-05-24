@@ -1,4 +1,4 @@
-# To activate SP mission, hold START+L1+R1 and press R2. To disable SP missions, hold START+L1+R1 and press L2.
+# To activate SP mission, hold START+L1+R1+R2. To disable SP missions, hold START+L1+R1+L2.
 
 ## It takes effect on Command Center so do it before getting to Command Center menu or in some other menu and then go back to Command Center.
 
