@@ -10,6 +10,9 @@ patch=1,EE,20175E54,extended,1440000A
 //Enable TEST button (removed function)
 patch=1,EE,202A3E5C,extended,8C242858
 
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,004997EC,extended,0000FF02
+
 // CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20338AFC,extended,24020001
@@ -28,6 +31,26 @@ patch=1,EE,20338AFC,extended,24020001
 
 //Toss Body instead of laying it down
 patch=1,EE,001ACA98,extended,2402002C
+
+//Change weather on missions that support it.
+//Copy data value and paste it after ",extended,":
+// Myanmar Fog - 0C08CC14
+// Toronto 3 Fog - 0C08CBE4
+// Tokyo Rain - 0C08CBAC
+// Lorelei Rain - 0C08CB74
+// Snowing - 0C08CB3C
+// Atmospheric effect - 0C08CC6C
+
+//Myanmar
+//patch=1,EE,10232CD8,extended,
+//Toronto 3
+//patch=1,EE,10232CB8,extended,
+//Tokyo
+//patch=1,EE,10232C98,extended,
+//Lorelei
+//patch=1,EE,10232C78,extended,
+//Belarus 2
+//patch=1,EE,10232C58,extended,
 
 // EXPERIMENTAL
 
