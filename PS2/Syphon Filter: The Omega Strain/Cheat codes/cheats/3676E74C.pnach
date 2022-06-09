@@ -7,6 +7,9 @@ patch=1,EE,20175F24,extended,1440000A
 //Enable TEST button
 patch=1,EE,202A53FC,extended,8C2480F8
 
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,0049F2EC,extended,0000FF02
+
 // CHEATS!
 //All weapons
 patch=1,EE,2033ACBC,extended,24020001
@@ -25,6 +28,23 @@ patch=1,EE,2033B180,extended,2002FFFF
 
 //Toss Body
 patch=1,EE,001ACC68,extended,2402002C
+
+//Change weather on missions that support it.
+//Copy data value and paste it after ",extended,":
+// Myanmar Fog - 0C08CC3C
+// Toronto 3 Fog - 0C08CC0C
+// Raining - 0C08CB9C
+// Snowing - 0C08CBD4
+// Atmospheric effect - 0C08CC8C
+
+//Myanmar
+//patch=1,EE,10232E58,extended,
+//Toronto 3
+//patch=1,EE,10232E38,extended,
+//Tokyo/Lorelei
+//patch=1,EE,10232DF8,extended,
+//Belarus 2
+//patch=1,EE,10232E18,extended,
 
 // EXPERIMENTAL
 
