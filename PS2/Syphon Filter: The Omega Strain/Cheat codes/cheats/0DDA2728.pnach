@@ -5,6 +5,9 @@ comment=by YukiXXL
 patch=1,EE,202A0064,extended,8C24B928
 patch=1,EE,20505B28,byte,0
 
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,004928AC,extended,0000FF02
+
 // CHEATS!
 //Open weapons
 patch=1,EE,2033343C,extended,24020001
@@ -14,6 +17,21 @@ patch=1,EE,2033343C,extended,24020001
 
 //Stop timer
 //patch=1,EE,2023A944,extended,24003634
+
+//FOR FUN!
+//Change weather on missions that support it.
+//Copy data value and paste it after ",extended,":
+// Myanmar Fog - 0C08CAC4
+// Toronto 3 Fog - 0C08CA94
+// Tokyo Rain - 0C08CA5C
+// Lorelei Rain - 0C08CA24
+// Snowing - 0C08C9EC
+// Atmospheric effect - 0C08CB1C
+
+//Toronto 3
+//patch=1,EE,10232778,extended,
+//Belarus 2
+//patch=1,EE,10232718,extended,
 
 // EXPERIMENTAL
 
