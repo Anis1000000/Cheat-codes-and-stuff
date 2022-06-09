@@ -9,6 +9,9 @@ patch=1,EE,201656A0,extended,14400009
 patch=1,EE,00506490,byte,1
 patch=1,EE,0051EEA8,byte,0
 
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,00492A3C,extended,0000FF02
+
 // CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
 patch=1,EE,20332B5C,extended,00000000
@@ -33,6 +36,26 @@ patch=1,EE,20332B5C,extended,00000000
 
 //Toss Body instead of laying it down
 patch=1,EE,001AC528,extended,2402002C
+
+//Change weather on missions that support it.
+//Copy data value and paste it after ",extended,":
+// Myanmar Fog - 0C08CAA4
+// Toronto 3 Fog - 0C08CA74
+// Tokyo Rain - 0C08CA3C
+// Lorelei Rain - 0C08CA04
+// Snowing - 0C08C9CC
+// Atmospheric effect - 0C08CAFC
+
+//Myanmar
+//patch=1,EE,10232718,extended,
+//Toronto 3
+//patch=1,EE,102326F8,extended,
+//Tokyo
+//patch=1,EE,102326D8,extended,
+//Lorelei
+//patch=1,EE,102326B8,extended,
+//Belarus 2
+//patch=1,EE,10232698,extended,
 
 // EXPERIMENTAL
 
