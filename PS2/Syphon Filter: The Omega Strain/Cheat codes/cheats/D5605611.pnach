@@ -37,6 +37,9 @@ patch=1,EE,20332B5C,extended,00000000
 //Toss Body instead of laying it down
 patch=1,EE,001AC528,extended,2402002C
 
+//Random outfits during missions
+patch=1,EE,20407a7c,extended,10400020
+
 //Change weather on missions that support it.
 //Copy data value and paste it after ",extended,":
 // Myanmar Fog - 0C08CAA4
