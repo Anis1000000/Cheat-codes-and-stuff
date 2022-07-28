@@ -1,4 +1,4 @@
-# Bunch of cheat codes.
+# Play as Jinpachi, Tetsujin and some other minor stuff.
 
 ## .pnach files with game version:
 - 1F88BECD - Europe/PAL
