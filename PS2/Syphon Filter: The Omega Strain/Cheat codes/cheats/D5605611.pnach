@@ -27,6 +27,9 @@ patch=1,EE,20332B5C,extended,00000000
 //Enable all spawns
 //patch=1,EE,201B422C,extended,0C0F2708
 
+//Spawn on different location instead of enemy/friend
+//patch=1,EE,201C2098,extended,00000000
+
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
 //patch=1,EE,001C67D8,extended,10600003
