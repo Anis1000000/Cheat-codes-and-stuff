@@ -3,15 +3,15 @@ comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
 
 //NTSC videmode
-patch=1,EE,20175DF8,extended,24A53CF0
+patch=1,EE,20175DF8,word,24A53CF0
 //ProScan videomode (NTSC code needs to be enabled)
-patch=1,EE,20175E54,extended,1440000A
+patch=1,EE,20175E54,word,1440000A
 
 //Enable TEST button (removed function)
-patch=1,EE,202A3E5C,extended,8C242858
+patch=1,EE,202A3E5C,word,8C242858
 
 //Awards 2 ratings/ranks on the back (Awards 3)
-patch=1,EE,004997EC,extended,0000FF02
+patch=1,EE,004997EC,word,0000FF02
 
 // CHEATS ! Gamehacking.org ( except for Team Ratings ).
 //Open weapons
@@ -23,17 +23,17 @@ patch=1,EE,20338AFC,extended,24020001
 //FOR FUN!
 
 //Enable all spawns
-//patch=1,EE,201B483C,extended,0C0FAD7C
+//patch=1,EE,201B483C,word,0C0FAD7C
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,001C6E40,extended,10600003
+//patch=1,EE,201C6E40,word,10600003
 
 //Toss Body instead of laying it down
-patch=1,EE,001ACA98,extended,2402002C
+patch=1,EE,001ACA98,word,2402002C
 
 //Change weather on missions that support it.
-//Copy data value and paste it after ",extended,":
+//Copy data value and paste it after ",word,":
 // Myanmar Fog - 0C08CC14
 // Toronto 3 Fog - 0C08CBE4
 // Tokyo Rain - 0C08CBAC
@@ -42,27 +42,27 @@ patch=1,EE,001ACA98,extended,2402002C
 // Atmospheric effect - 0C08CC6C
 
 //Myanmar
-//patch=1,EE,10232CD8,extended,
+//patch=1,EE,10232CD8,word,
 //Toronto 3
-//patch=1,EE,10232CB8,extended,
+//patch=1,EE,10232CB8,word,
 //Tokyo
-//patch=1,EE,10232C98,extended,
+//patch=1,EE,10232C98,word,
 //Lorelei
-//patch=1,EE,10232C78,extended,
+//patch=1,EE,10232C78,word,
 //Belarus 2
-//patch=1,EE,10232C58,extended,
+//patch=1,EE,10232C58,word,
 
 // EXPERIMENTAL
 
 //Enable Online lobby.
-//patch=1,EE,202A350C,extended,24A52230
-//patch=1,EE,202A3514,extended,24C62248
+//patch=1,EE,202A350C,word,24A52230
+//patch=1,EE,202A3514,word,24C62248
 
 //0 = Offline; 1 = Online
 //patch=1,EE,205AA3E0,byte,0
 
 //Enable Mission Setup
-//patch=1,EE,20296FD4,extended,00000000
-//patch=1,EE,202AB490,extended,00000000
+//patch=1,EE,20296FD4,word,00000000
+//patch=1,EE,202AB490,word,00000000
 //Enable Join Mission
-//patch=1,EE,20298914,extended,8C242498
+//patch=1,EE,20298914,word,8C242498
