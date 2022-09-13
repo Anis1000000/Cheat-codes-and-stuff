@@ -22,25 +22,25 @@ patch=1,EE,207EE063,byte,31
 //Menu
 
 //Enable LAN button
-patch=1,EE,20340058,extended,8C2478E8
+patch=1,EE,20340058,word,8C2478E8
 patch=1,EE,204E5D18,byte,0
 
 //Enable Mission Setup
-patch=1,EE,00338E4C,extended,9082002D
-//patch=1,EE,20343AA4,extended,00000000
+patch=1,EE,00338E4C,word,9082002D
+//patch=1,EE,20343AA4,word,00000000
 
 //Gameplay
 
 //FakeByte
-patch=1,EE,004B09D4,word,00000001
+patch=1,EE,004B09D4,byte,1
 
 //Quickchat
-patch=1,EE,002F0F6C,extended,902209D4
+patch=1,EE,002F0F6C,word,902209D4
 
 //Buddy climb
-patch=1,EE,00240784,extended,902209D4
+patch=1,EE,00240784,word,902209D4
 //Animation change
-patch=1,EE,00258174,extended,2403002E
+patch=1,EE,00258174,word,2403002E
 
 // EXPERIMENTAL
 
@@ -48,5 +48,5 @@ patch=1,EE,00258174,extended,2403002E
 //patch=1,EE,20537C8D,byte,0
 
 //Enable online lobby
-//patch=1,EE,2033FA6C,extended,24A53980
-//patch=1,EE,2033FA74,extended,24C63998
+//patch=1,EE,2033FA6C,word,24A53980
+//patch=1,EE,2033FA74,word,24C63998
