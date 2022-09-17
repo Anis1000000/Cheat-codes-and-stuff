@@ -1,0 +1,9 @@
+gametitle=SFOS Review Code Mar 6 2004
+comment=Basic fixes
+
+//Dongle protection bypass
+patch=1,EE,0041D418,byte,0
+
+// Cop2 problems.
+patch=0,EE,00395D28,word,48438000
+patch=0,EE,00395D2C,word,4B06521B

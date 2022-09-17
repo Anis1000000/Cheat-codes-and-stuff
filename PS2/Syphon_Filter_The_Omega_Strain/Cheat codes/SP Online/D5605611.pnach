@@ -1,0 +1,69 @@
+gametitle=Syphon Filter: The Omega Strain USA
+comment=by YukiXXL
+
+//DNAS Bypass
+patch=1,EE,2044B7A0,word,03E00008
+patch=1,EE,2044B7A4,word,00000000
+
+//ALL LEVELS
+patch=1,EE,20333020,extended,2002FFFF
+
+//All missions online
+patch=1,EE,204ACC70,word,01010101
+patch=1,EE,204ACC74,word,01010101
+patch=1,EE,204ACC78,word,01010101
+patch=1,EE,204ACC7C,word,01010101
+
+//Lobby IDs fix
+patch=1,EE,204ACB6C,word,00000001
+patch=1,EE,204ACB78,word,00000002
+patch=1,EE,204ACB7C,word,00000003
+patch=1,EE,204ACB84,word,00000004
+patch=1,EE,204ACB88,word,00000005
+patch=1,EE,204ACB8C,word,00000006
+patch=1,EE,204ACB98,word,00000007
+patch=1,EE,204ACB9C,word,00000008
+
+//SP Team Par
+patch=1,EE,20A822EC,word,00000186
+patch=1,EE,20A8234C,word,000002BC
+patch=1,EE,20A8236C,word,00000258
+patch=1,EE,20A823AC,word,00000258
+patch=1,EE,20A823CC,word,00000258
+patch=1,EE,20A823EC,word,000004B0
+patch=1,EE,20A8244C,word,0000021C
+patch=1,EE,20A8246C,word,0000012C
+
+//Own agent on Bonus missions
+patch=1,EE,204ACBB0,word,00000000
+patch=1,EE,204ACBB4,word,00000000
+patch=1,EE,204ACBB8,word,00000000
+patch=1,EE,204ACBBC,word,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,204ACBD0,word,00000000
+patch=1,EE,204ACBD4,word,00000000
+patch=1,EE,204ACBD8,word,00000000
+patch=1,EE,204ACBDC,word,00000000
+
+//Bypass the OnlineIndextoLevel checking
+//1st check bypass
+patch=1,EE,2033E674,word,3C010049
+patch=1,EE,2033E678,word,8C24B7A4
+//2nd check bypass
+patch=1,EE,2033EAE0,word,3C010049
+patch=1,EE,2033EAE8,word,8C25B7A4
+
+//Training Mission unlocked
+patch=1,EE,2029722C,word,0000102B
+//Lobby ID fix
+patch=1,EE,204ACBA4,word,00000000
+//Bypass Level ID check
+patch=1,EE,00295E88,word,28410018
+// Training Level ID fix
+patch=1,EE,D048B7A4,extended,00000017
+patch=1,EE,0048B7A4,extended,00000011
+
+//Ambience music as Intro music.
+patch=1,EE,2049f538,word,415f7325
+patch=1,EE,2049f53c,word,562e424d
+patch=1,EE,2049f540,word,00004b50

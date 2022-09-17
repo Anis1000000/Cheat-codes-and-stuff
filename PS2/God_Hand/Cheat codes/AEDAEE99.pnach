@@ -1,0 +1,6 @@
+gametitle=God Hand NTSC-J
+comment=Fan Service
+
+//Both God Hands costume
+// 1 is Normal Doublehand, 3 is Devil Doublehand, 5 is Karate and 7 is Carnival.
+patch=1,EE,00567C7E,byte,1

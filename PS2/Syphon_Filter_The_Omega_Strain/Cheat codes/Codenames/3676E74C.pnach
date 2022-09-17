@@ -1,0 +1,165 @@
+gametitle=Syphon Filter: The Omega Virus
+comment=by YukiXXL
+
+//Menu stuff
+
+//Enable Online lobby in offline.
+patch=1,EE,202A4750,extended,24A57E30
+patch=1,EE,202A4758,extended,24C67E48
+patch=1,EE,202A9C44,extended,10000010
+
+//All levels available in online mode
+patch=1,EE,204B8230,extended,01010101
+patch=1,EE,204B8234,extended,01010101
+patch=1,EE,204B8238,extended,01010101
+patch=1,EE,204B823C,extended,01010101
+patch=1,EE,202994AC,extended,0000102B
+
+//Enable Mission Setup offline
+patch=1,EE,00297E30,extended,90620030
+
+//Join Mission = Play Mission
+patch=1,EE,20297F60,extended,8C237A7C
+patch=1,EE,20297F64,extended,080A5FB2
+patch=1,EE,20297F68,extended,00000000
+
+//Online, Offline enabler
+patch=1,EE,001788C0,extended,A023F8E4
+patch=1,EE,0017896C,extended,A020F8E4
+
+//Codename changer
+patch=1,EE,002AD16C,extended,3C01004A
+patch=1,EE,202AD174,extended,2483FFFF
+patch=1,EE,202AD178,extended,AC2312A8
+//Don't change on exit
+patch=1,EE,2045215C,extended,00000000
+
+//Min num agents = 1
+patch=1,EE,002AD80C,extended,24050001
+
+//Gameplay stuff
+
+//Enable online objectives + dialogues
+patch=1,EE,0012FA88,extended,9022F8E4
+
+//Team Par
+patch=1,EE,0046D348,extended,9025F8E4
+patch=1,EE,0046D41C,extended,9022F8E4
+//Check if completed Par
+patch=1,EE,00470914,extended,9025F8E4
+
+//Checking objectives and writing Par time
+//patch=1,EE,0033DC80,extended,9025F8E4
+patch=1,EE,0033DD68,extended,9022F8E4
+
+//Buddy Climb
+patch=1,EE,00170444,extended,9022F8E4
+//Animation Change
+patch=1,EE,0018DE6C,extended,24030031
+
+//Extra fixes for better gameplay
+
+//Online
+//B2 Unlimited C4s ON
+patch=1,EE,D058F8E4,extended,00000001
+patch=1,EE,203FF0F0,extended,00000000
+
+//Own agent on Bonus missions
+patch=1,EE,E1040001,extended,0058F8E4
+patch=1,EE,204B8170,extended,00000000
+patch=1,EE,204B8174,extended,00000000
+patch=1,EE,204B8178,extended,00000000
+patch=1,EE,204B817C,extended,00000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040001,extended,0058F8E4
+patch=1,EE,204B8190,extended,00000000
+patch=1,EE,204B8194,extended,00000000
+patch=1,EE,204B8198,extended,00000000
+patch=1,EE,204B819C,extended,00000000
+
+//Offline
+//B2 Unlimited C4s OFF
+patch=1,EE,D058F8E4,extended,00000000
+patch=1,EE,203D9AE0,extended,0C1016D4
+
+//Own agent on Bonus missions
+patch=1,EE,E1040000,extended,005721C4
+patch=1,EE,204B8170,extended,01000000
+patch=1,EE,204B8174,extended,00010000
+patch=1,EE,204B8178,extended,00010000
+patch=1,EE,204B817C,extended,01000000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,E1040000,extended,005721C4
+patch=1,EE,204B8190,extended,01000000
+patch=1,EE,204B8194,extended,00010000
+patch=1,EE,204B8198,extended,00010000
+patch=1,EE,204B819C,extended,01000000
+
+//***Codename stuff***
+
+//Fix for not being Cobra offline
+//patch=1,EE,D04A12A8,extended,0000FFFF
+//patch=1,EE,204A12A8,extended,00000000
+
+//Codename joker codes
+patch=1,EE,200FFE1C,extended,9022F8E8
+patch=1,EE,200FFE20,extended,3C01004A
+patch=1,EE,200FFE24,extended,8C3712A8
+patch=1,EE,200FFE28,extended,03E00008
+patch=1,EE,200FFE30,extended,3C01004A
+patch=1,EE,200FFE34,extended,8C3212A8
+patch=1,EE,200FFE38,extended,0240302D
+patch=1,EE,200FFE3C,extended,03E00008
+
+//Menu
+
+//Stats
+patch=1,EE,2036E1BC,extended,0C03FF8C
+
+//Gameplay
+
+//Quickchat enabled
+patch=1,EE,0047ACD8,extended,9022F8E4
+//fix for showing codename
+patch=1,EE,202BDEA8,extended,3C01004A
+patch=1,EE,202BDEAC,extended,8C2212A8
+
+//Radio (when killed)
+patch=1,EE,2018CEF0,extended,3C01004A
+patch=1,EE,2018CEF4,extended,8C2212A8
+
+//Show codename on the right
+patch=1,EE,0046B1DC,extended,9022F8E4
+
+//Minimap fix
+patch=1,EE,2026E360,extended,3C01004A
+patch=1,EE,2026E364,extended,8C2512A8
+patch=1,EE,202A7340,extended,3C01004A
+patch=1,EE,202A7344,extended,8C2312A8
+
+//End mission
+
+//Load the codename
+patch=1,EE,00471714,extended,3C01004A
+patch=1,EE,20471740,extended,8C3712A8
+patch=1,EE,20471744,extended,10000072
+//<Codename>
+patch=1,EE,20471A48,extended,26E60001
+//<Codename> managed to not get killed
+patch=1,EE,20471ACC,extended,26E70001
+//<Codename> collateral
+patch=1,EE,0047088C,extended,3C01004A
+patch=1,EE,20470894,extended,8C3112A8
+
+//Medals and stuff
+//Load the register
+patch=1,EE,2046E854,extended,0C03FF87
+//Change the values
+patch=1,EE,2046EA90,extended,26E60001
+patch=1,EE,2046EB14,extended,26E70001
+patch=1,EE,2046EB80,extended,26E60001
+patch=1,EE,2046EC04,extended,26E70001
+patch=1,EE,2046EC70,extended,26E60001
+patch=1,EE,2046ECF4,extended,26E70001
+patch=1,EE,2046ED60,extended,26E60001
+patch=1,EE,2046EDE4,extended,26E70001

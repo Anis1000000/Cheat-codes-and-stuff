@@ -1,0 +1,92 @@
+gametitle=Syphon Filter: The Omega Strain USA
+comment=by YukiXXL
+//UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
+
+//PAL videomode
+patch=1,EE,201656A0,word,14400009
+
+//Enable TEST button
+patch=1,EE,00506490,byte,1
+patch=1,EE,0051EEA8,byte,0
+
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,00492A3C,word,0000FF02
+
+//Auto-aim at legs (Jampack demo like)
+//Headshot ability needed!
+patch=1,EE,00248764,word,24510005
+//Headshot ability always available
+//patch=1,EE,002485a4,word,24050001
+
+// CHEATS ! Gamehacking.org ( except for Team Ratings ).
+//Open weapons
+patch=1,EE,20332B5C,extended,00000000
+
+//Unlock all levels
+//patch=1,EE,20333020,extended,2002FFFF
+
+//Invisible
+//patch=1,EE,2016CA2C,extended,0805B37A
+
+// FOR FUN!
+
+//Fix changing weapons on Kyrgzstan and Chechnya
+//patch=1,EE,203E1A84,word,00000000
+
+//Enable all spawns
+//patch=1,EE,201B422C,word,0C0F2708
+
+//Spawn on different location instead of enemy/friend
+//patch=1,EE,201C2098,word,00000000
+
+//Disable radio logs
+//You can hear "The First part of the mission is complete" on some missions where there are other lines
+//patch=1,EE,201C67D8,word,10600003
+
+//Count kill as Collateral
+//patch=1,EE,20186FD8,word,1040001F
+
+//Toss Body instead of laying it down
+patch=1,EE,0024A254,word,2402002D
+
+//Random outfits during missions
+patch=1,EE,20407a7c,word,10400020
+
+//Disable mission disguises
+//patch=1,EE,00407A88,word,24420000
+
+//Change weather on missions that support it.
+//Copy data value and paste it after ",word,":
+// Myanmar Fog - 0C08CAA4
+// Toronto 3 Fog - 0C08CA74
+// Tokyo Rain - 0C08CA3C
+// Lorelei Rain - 0C08CA04
+// Snowing - 0C08C9CC
+// Atmospheric effect - 0C08CAFC
+
+//Myanmar
+//patch=1,EE,10232718,word,
+//Toronto 3
+//patch=1,EE,102326F8,word,
+//Tokyo
+//patch=1,EE,102326D8,word,
+//Lorelei
+//patch=1,EE,102326B8,word,
+//Belarus 2
+//patch=1,EE,10232698,word,
+
+// EXPERIMENTAL
+
+//num_agnets (1-8)
+//patch=1,EE,002A159C,word,24050001
+//patch=1,EE,002A15B4,word,24060008
+
+//FOR ONLINE
+
+//Start with only one player
+patch=1,EE,002A3AE0,word,28410001
+//Be other codename and have button working
+patch=1,EE,002D1E58,word,8C244174
+
+//m_bGameLocked
+//patch=1,EE,005723F8,byte,0

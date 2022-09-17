@@ -1,0 +1,39 @@
+gametitle=Tekken 5 PAL-Europe
+comment=by YukiXXL
+
+//Player 1 Holds R1 + R2 to replace Jinpachi with Asuka
+//Then select Asuka using face buttons
+//For use with 2nd player, replace 0015BB02 -> 0015BC02
+patch=1,EE,E004F5FF,extended,0015BB02
+patch=1,EE,0047B9E0,extended,0000004B
+patch=1,EE,0047B9E4,extended,0000004C
+patch=1,EE,0047B9E8,extended,0000004D
+patch=1,EE,0047B9EC,extended,0000004E
+//Let go of all buttons to reset back to Asuka
+patch=1,EE,E004FFFF,extended,0015BB02
+patch=1,EE,0047B9E0,extended,0000003B
+patch=1,EE,0047B9E4,extended,0000003C
+patch=1,EE,0047B9E8,extended,0000003D
+patch=1,EE,0047B9EC,extended,0000003E
+
+//Player 1 Holds L1 + L2 to replace Tetsujin with Mokujin
+//Select with square (LP)
+//For use with 2nd player, replace D015BB02 -> D015BC02
+patch=1,EE,D015BB02,extended,0000FAFF
+patch=1,EE,0047B9A0,extended,0000004F
+//Let go of all buttons to reset back to Mokujin
+patch=1,EE,D015BB02,extended,0000FFFF
+patch=1,EE,0047B9A0,extended,0000002D
+
+//Have 150 Handicap HP in other modes (gotta set it first in VS mode)
+//Player 1
+patch=1,EE,D0153CB0,extended,00000096
+patch=1,EE,203BD2D0,extended,00D98000
+//Player 2
+patch=1,EE,D0153D20,extended,00000096
+patch=1,EE,203BDBA0,extended,00D98000
+
+//CHEATS!
+
+//Unlock all characters (Except Devil Jin)
+//patch=1,EE,203F8B08,extended,FFFFFFFF

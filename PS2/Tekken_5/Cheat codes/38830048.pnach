@@ -1,0 +1,25 @@
+gametitle=Tekken 5 Demo NTSC-USA
+comment=by YukiXXL
+
+//Fake byte
+patch=1,EE,002B8918,byte,1
+
+//Bypass protection
+patch=1,EE,00123FC8,word,8E630018
+//Alternative
+//patch=1,EE,20123FD0,extended,08049012
+
+//Random Characters
+patch=1,EE,001235B4,word,8E240018
+patch=1,EE,00123634,word,8E240018
+//Random Stages
+patch=1,EE,00123744,word,8E230018
+
+//Alternative (Random chars/stages)
+//patch=1,EE,20123670,extended,0C04A1D2
+
+//Disable Demo mode
+patch=1,EE,002B8900,byte,0
+
+//Two controllers enabled
+//patch=1,EE,20121EC0,word,00000000
