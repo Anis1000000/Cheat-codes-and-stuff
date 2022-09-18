@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../../img/sfos-bg1.jpg);
+    background-color: darkslategray;
     background-size: cover;
 }
 
@@ -14,7 +14,7 @@ dacenter p {
     margin-right: auto;
     margin-top: 20px;
     width: 80%;
-    background-color: green;
+    background-color: darkgreen;
     text-align: left;
     color: white;
     font-size: 18px;
