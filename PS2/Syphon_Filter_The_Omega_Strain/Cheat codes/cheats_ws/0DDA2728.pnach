@@ -2,24 +2,24 @@ gametitle=Syphon Filter: The Omega Strain Public Beta 2
 comment=Basic fixes
 
 //Flashlight and NV Fix
-patch=0,EE,0038E8E8,word,48438000
-patch=0,EE,0036CC9C,word,4B06521B
+patch=0,EE,0038E8E8,extended,48438000
+patch=0,EE,0036CC9C,extended,4B06521B
 
 //Offline enable
-patch=1,EE,0048B930,word,00000000
+patch=1,EE,0048B930,extended,00000000
 
 //gameplay
-patch=1,EE,003907d0,word,3c043f40
-patch=1,EE,003907d4,word,44841800
-patch=1,EE,003907d8,word,46030003
-patch=1,EE,003907dc,word,460318c3
-patch=1,EE,003907e0,word,46031840
-patch=1,EE,00390854,word,e603007c
+patch=1,EE,003907D0,extended,3C043F40
+patch=1,EE,003907D4,extended,44841800
+patch=1,EE,003907D8,extended,46030003
+patch=1,EE,003907DC,extended,460318C3
+patch=1,EE,003907E0,extended,46031840
+patch=1,EE,00390854,extended,E603007C
 
 //HUD fix
-//patch=1,EE,0039068c,word,00000000
-//patch=1,EE,00390694,word,3C033f40
+//patch=1,EE,0039068C,extended,00000000
+//patch=1,EE,00390694,extended,3C033F40
 
 //FMV's fix
-//patch=1,EE,004123fc,word,241016d0
-//patch=1,EE,00412404,word,24127490
+//patch=1,EE,004123FC,extended,241016D0
+//patch=1,EE,00412404,extended,24127490
