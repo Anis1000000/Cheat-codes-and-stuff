@@ -2,17 +2,17 @@ gametitle=Syphon Filter: The Omega Strain EU
 comment=Widescreen hack by nemesis2000
 
 //gameplay
-patch=1,EE,003972e0,word,3c043f40
-patch=1,EE,003972e4,word,44841800
-patch=1,EE,003972e8,word,46030003
-patch=1,EE,003972ec,word,460318c3
-patch=1,EE,003972f0,word,46031840
-patch=1,EE,00397364,word,e603007c
+patch=1,EE,003972E0,extended,3C043F40
+patch=1,EE,003972E4,extended,44841800
+patch=1,EE,003972E8,extended,46030003
+patch=1,EE,003972EC,extended,460318C3
+patch=1,EE,003972F0,extended,46031840
+patch=1,EE,00397364,extended,E603007C
 
 //HUD fix
-//patch=1,EE,0039719c,word,00000000
-//patch=1,EE,003971a4,word,3C033f40
+//patch=1,EE,0039719C,extended,00000000
+//patch=1,EE,003971A4,extended,3C033F40
 
 //FMV's fix
-patch=1,EE,00418f3c,word,241016d0
-patch=1,EE,00418f44,word,24127490
+patch=1,EE,00418F3C,extended,241016D0
+patch=1,EE,00418F44,extended,24127490
