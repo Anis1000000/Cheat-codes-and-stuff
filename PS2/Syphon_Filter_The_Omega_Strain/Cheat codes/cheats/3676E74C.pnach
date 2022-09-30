@@ -2,13 +2,13 @@ gametitle=Syphon Filter: The Omega Virus
 comment=YukiXXL
 
 //PAL video mode
-patch=1,EE,20175F24,word,1440000A
+patch=1,EE,20175F24,extended,1440000A
 
 //Enable TEST button
-patch=1,EE,202A53FC,word,8C2480F8
+patch=1,EE,202A53FC,extended,8C2480F8
 
 //Awards 2 ratings/ranks on the back (Awards 3)
-patch=1,EE,0049F2EC,word,0000FF02
+patch=1,EE,0049F2EC,extended,0000FF02
 
 // CHEATS!
 //All weapons
@@ -20,17 +20,17 @@ patch=1,EE,2033B180,extended,2002FFFF
 // FOR FUN!
 
 //Enable all spawns
-//patch=1,EE,201B49BC,word,0C0FBB78
+//patch=1,EE,201B49BC,extended,0C0FBB78
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,201C6F78,word,10600003
+//patch=1,EE,201C6F78,extended,10600003
 
 //Toss Body
-patch=1,EE,001ACC68,word,2402002C
+patch=1,EE,001ACC68,extended,2402002C
 
 //Change weather on missions that support it.
-//Copy data value and paste it after ",word,":
+//Copy data value and paste it after ",extended,":
 // Myanmar Fog - 0C08CC3C
 // Toronto 3 Fog - 0C08CC0C
 // Raining - 0C08CB9C
@@ -38,18 +38,18 @@ patch=1,EE,001ACC68,word,2402002C
 // Atmospheric effect - 0C08CC8C
 
 //Myanmar
-//patch=1,EE,10232E58,word,
+//patch=1,EE,10232E58,extended,
 //Toronto 3
-//patch=1,EE,10232E38,word,
+//patch=1,EE,10232E38,extended,
 //Tokyo/Lorelei
-//patch=1,EE,10232DF8,word,
+//patch=1,EE,10232DF8,extended,
 //Belarus 2
-//patch=1,EE,10232E18,word,
+//patch=1,EE,10232E18,extended,
 
 // EXPERIMENTAL
 
 //Mission Setup (and Begin Mission bypass)
-//patch=1,EE,20297E34,word,00000000
-//patch=1,EE,202AD190,word,00000000
+//patch=1,EE,20297E34,extended,00000000
+//patch=1,EE,202AD190,extended,00000000
 //Join Mission
-//patch=1,EE,20299774,word,8C247D38
+//patch=1,EE,20299774,extended,8C247D38
