@@ -2,22 +2,22 @@ gametitle=SoulCalibur 3 NTSC-U
 comment=Fan Service
 
 //Extended Bonus Characters(Untested)
-//patch=1,EE,205A4AA0,word,30272829
-//patch=1,EE,205A4AA4,word,2A2B2C2E
-//patch=1,EE,205A4AA8,word,83819398
-//patch=1,EE,205A4AAC,word,87888984
-//patch=1,EE,205A4AB0,word,85868A8B
-//patch=1,EE,205A4AB4,word,8C8D8E8F
-//patch=1,EE,205A4AB8,word,90919200
+//patch=1,EE,205A4AA0,extended,30272829
+//patch=1,EE,205A4AA4,extended,2A2B2C2E
+//patch=1,EE,205A4AA8,extended,83819398
+//patch=1,EE,205A4AAC,extended,87888984
+//patch=1,EE,205A4AB0,extended,85868A8B
+//patch=1,EE,205A4AB4,extended,8C8D8E8F
+//patch=1,EE,205A4AB8,extended,90919200
 
 //Extended Bonus Characters 2.0
-patch=1,EE,205A4AA0,word,30272829
-patch=1,EE,205A4AA4,word,2A2B2C2E
-patch=1,EE,205A4AA8,word,31363738
-patch=1,EE,205A4AAC,word,81988485
-patch=1,EE,205A4AB0,word,86878889
-patch=1,EE,205A4AB4,word,8A8B8C93
-patch=1,EE,205A4AB8,word,9800003F
+patch=1,EE,205A4AA0,extended,30272829
+patch=1,EE,205A4AA4,extended,2A2B2C2E
+patch=1,EE,205A4AA8,extended,31363738
+patch=1,EE,205A4AAC,extended,81988485
+patch=1,EE,205A4AB0,extended,86878889
+patch=1,EE,205A4AB4,extended,8A8B8C93
+patch=1,EE,205A4AB8,extended,9800003F
 
 //Night Terror fix
-patch=1,EE,2028ed84,word,5060000b
+patch=1,EE,2028ED84,extended,5060000B
