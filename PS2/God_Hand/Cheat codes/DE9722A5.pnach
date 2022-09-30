@@ -2,10 +2,10 @@ gametitle=God Hand PAL
 comment=Fan Service
 
 //DEAD PAN
-patch=1,EE,201250A8,word,00001021
-patch=1,EE,201251CC,word,00001021
-patch=1,EE,20125264,word,00002021
-patch=1,EE,20125338,word,00001821
+patch=1,EE,201250A8,extended,00001021
+patch=1,EE,201251CC,extended,00001021
+patch=1,EE,20125264,extended,00002021
+patch=1,EE,20125338,extended,00001821
 
 //Both God Hands
 // 1 is Normal Doublehand, 3 is Devil Doublehand, 5 is Karate and 7 is Carnival.
