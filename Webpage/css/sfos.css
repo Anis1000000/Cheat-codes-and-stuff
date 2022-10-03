@@ -9,6 +9,69 @@ body {
     background-size: cover;
 }
 
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #081524;
+}
+
+.navbar a, .navbar p {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 26px 30px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 26px 30px;
+  font-size: 22px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #2D5173;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  background-color: #081524;
+  padding: 5px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #2D5173;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 dacenter {
     display: block;
     margin-left: auto;
@@ -44,8 +107,8 @@ dacenter p {
 dacenter p2 {
     display: block;
     background-color: black;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 40%;
+    text-align: left;
 }
 
 dacenter toc {
@@ -65,68 +128,4 @@ dacenter toc h2 {
 dacenter toc h3 {
     margin-left: 43%;
     padding: 0px 20px;
-}
-
-nav {
-    width: 100%;
-    height: 100px;
-    background-color: #081524;
-}
-
-nav p {
-    float: left;
-    padding: 0px 20px;
-}
-
-nav ul {
-    float: left;
-}
-
-nav ul li {
-    color: white;
-    line-height: 55px;
-    float: left;
-    list-style: none;
-    position: relative;
-    font-size: 22px;
-    padding: 20px 40px;
-    text-decoration: none;
-}
-
-nav ul li:hover {
-    background-color: #2D5173;
-}
-
-nav ul li a {
-    display: block;
-    font-family: Arial;
-    color: white;
-    font-size: 20px;
-    padding: 22px 14px;
-    text-decoration: none;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #081524;
-    padding: 10px;
-    border-radius: 0px 0px 4px 4px;
-}
-
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul li ul li {
-    width: 300px;
-    border-radius: 4px;
-}
-
-nav ul li ul li a {
-    padding: 8px 14px;
-}
-
-nav ul li ul li a:hover {
-    background-color: #2D5173;
 }
