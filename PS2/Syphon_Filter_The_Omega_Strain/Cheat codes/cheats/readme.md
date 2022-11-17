@@ -9,3 +9,4 @@
 - C909A32E - Public Beta 1
 - D5605611 - USA/NTSC
 - D91F8506 - individual Demo
+- BFCE8450 - Demo Prototype
