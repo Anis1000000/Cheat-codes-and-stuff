@@ -1,0 +1,36 @@
+gametitle=Syphon Filter: The Omega Strain Demo Prototype
+comment=by YukiXXL
+
+//RESTRICT_LEVELS=0
+patch=1,EE,20808C0D,byte,30
+
+//USE_VALID_LEVELS=1
+patch=1,EE,20808D00,byte,30
+
+//UNLOCK_ZEUS=1
+patch=1,EE,20808C2D,byte,31
+
+//BOOT_INVULNERABLE=1
+patch=1,EE,20808E2B,byte,31
+
+//Fake Byte
+patch=1,EE,00512204,byte,1
+
+//Quickchat
+patch=1,EE,0022BBEC,extended,90222204
+
+//Buddy climb
+patch=1,EE,0016B0B4,extended,90222204
+//Animation change
+patch=1,EE,00188CFC,extended,2403002E
+
+//Start with only one player
+patch=1,EE,00283dc8,word,28410001
+
+//Open Weapons
+patch=1,EE,2030149C,extended,00000000
+
+//Play once for all objectives
+patch=1,EE,20302708,extended,2401FFFF
+patch=1,EE,2030270C,extended,AC410084
+patch=1,EE,20302718,extended,24020001
