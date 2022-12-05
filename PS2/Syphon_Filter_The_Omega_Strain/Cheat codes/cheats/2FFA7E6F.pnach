@@ -1,6 +1,18 @@
 gametitle=Jampack Demo
 comment=by YukiXXL
 
+//PAL videomode
+//patch=1,EE,2022E9D0,extended,00000000
+
+//Disable videos (SOLMOVIE,EOLMOVIE)
+//patch=1,EE,201F7464,extended,00000000
+//patch=1,EE,201F7474,extended,00000000
+//ProScan (videos need to be disabled)
+//patch=1,EE,2022EA1C,extended,00000000
+
+//60 FPS
+patch=1,EE,0022EA58,extended,2402003C
+
 //E3_BUILD=1 (PS2-20771EF0 313D444C)
 patch=1,EE,20771EF3,byte,31
 
@@ -63,12 +75,3 @@ patch=1,EE,00240EA4,extended,2403002D
 //Enable Online mode
 patch=1,EE,10315BE0,extended,24A5C6D0
 patch=1,EE,10315BE8,extended,24C6C6E8
-
-//PAL videomode
-//patch=1,EE,2022E9D0,extended,14400009
-
-//Disable videos (SOLMOVIE,EOLMOVIE)
-//patch=1,EE,201F7464,extended,00000000
-//patch=1,EE,201F7474,extended,00000000
-//ProScan (videos need to be disabled)
-//patch=1,EE,2022EA1C,extended,1440000A
