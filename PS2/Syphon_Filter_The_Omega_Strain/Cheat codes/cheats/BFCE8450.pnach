@@ -29,7 +29,7 @@ patch=1,EE,0016B0B4,extended,90222204
 //Animation change
 patch=1,EE,00188CFC,extended,2403002E
 
-//CHEATS
+// CHEATS
 
 //Open Weapons
 patch=1,EE,2030149C,extended,00000000
