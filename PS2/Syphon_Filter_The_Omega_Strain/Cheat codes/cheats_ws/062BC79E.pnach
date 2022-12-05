@@ -4,6 +4,6 @@ comment=Basic fixes
 //Dongle protection bypass
 patch=1,EE,0041D418,byte,0
 
-// Cop2 problems.
+//NV and Flashlight Fix
 patch=0,EE,20395D28,extended,48438000
 patch=0,EE,20395D2C,extended,4B06521B
