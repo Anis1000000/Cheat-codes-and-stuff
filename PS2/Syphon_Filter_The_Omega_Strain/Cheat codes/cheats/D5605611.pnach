@@ -3,7 +3,12 @@ comment=by YukiXXL
 //UNCOMMENT (remove "//" before "patch") THE CHEATS YOU WAN'T TO ENABLE, COMMENT OR REMOVE THE ONES YOU WAN'T TO DISABLE.
 
 //PAL videomode
-patch=1,EE,201656A0,extended,14400009
+patch=1,EE,201656A0,extended,00000000
+
+//60 FPS
+patch=1,EE,00165468,extended,2402003C
+patch=1,EE,001654A8,extended,2402003C
+patch=1,EE,00165728,extended,2402003C
 
 //Enable TEST button
 patch=1,EE,00506490,byte,1
