@@ -1,6 +1,11 @@
 gametitle=Syphon Filter: The Omega Strain Demo Prototype
 comment=by YukiXXL
 
+//60 FPS
+patch=1,EE,00170528,extended,2402003C
+patch=1,EE,00170568,extended,2402003C
+patch=1,EE,001707E0,extended,2402003C
+
 //RESTRICT_LEVELS=0
 patch=1,EE,20808C0D,byte,30
 
@@ -24,13 +29,31 @@ patch=1,EE,0016B0B4,extended,90222204
 //Animation change
 patch=1,EE,00188CFC,extended,2403002E
 
-//Start with only one player
-patch=1,EE,00283dc8,word,28410001
+//CHEATS
 
 //Open Weapons
 patch=1,EE,2030149C,extended,00000000
+
+//Open Levels
+patch=1,EE,20301910,extended,2002FFFF
 
 //Play once for all objectives
 patch=1,EE,20302708,extended,2401FFFF
 patch=1,EE,2030270C,extended,AC410084
 patch=1,EE,20302718,extended,24020001
+
+//ONLINE OR LAN
+
+//Start with only one player
+patch=1,EE,00283dc8,word,28410001
+
+//Play as Dragon
+//patch=1,EE,20440468,extended,00000003
+//patch=1,EE,002A7148,extended,8C240464
+
+//Italy online
+patch=1,EE,20452610,extended,00000000
+patch=1,EE,20452630,extended,01010101
+patch=1,EE,204525CC,extended,00000003
+patch=1,EE,0045259C,extended,00000003
+
