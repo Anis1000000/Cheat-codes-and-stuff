@@ -23,7 +23,8 @@ patch=1,EE,00248764,extended,24510005
 //Headshot ability always available
 //patch=1,EE,002485a4,extended,24050001
 
-// CHEATS ! Gamehacking.org ( except for Team Ratings ).
+// CHEATS
+
 //Open weapons
 patch=1,EE,20332B5C,extended,00000000
 
