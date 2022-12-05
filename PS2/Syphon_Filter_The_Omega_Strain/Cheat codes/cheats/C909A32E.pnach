@@ -27,7 +27,7 @@ patch=1,EE,004b5190,byte,1
 //debugTest
 patch=1,EE,004BABA0,byte,1
 
-//Menu
+// MENU
 
 //UseLevelCharacter
 patch=1,EE,2046FCD0,extended,00000000
@@ -48,7 +48,8 @@ patch=1,EE,2046FDF8,extended,01010101
 patch=1,EE,2046FDFC,extended,01010101
 patch=1,EE,2046FE00,extended,00000101
 
-//CHEATS
+// CHEATS
+
 //Open Weapons
 patch=1,EE,20311FCC,extended,24020001
 
