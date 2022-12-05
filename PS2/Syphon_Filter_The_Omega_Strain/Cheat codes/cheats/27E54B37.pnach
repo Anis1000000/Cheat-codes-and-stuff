@@ -19,7 +19,7 @@ patch=1,EE,202A3E5C,extended,8C242858
 //Awards 2 ratings/ranks on the back (Awards 3)
 patch=1,EE,004997EC,extended,0000FF02
 
-// CHEATS ! Gamehacking.org ( except for Team Ratings ).
+// CHEATS
 //Open weapons
 patch=1,EE,20338AFC,extended,24020001
 
