@@ -3,26 +3,29 @@ comment=YukiXXL
 
 //240A1E00-For Cheat Engine use ! Music code.
 
+//60 FPS
+patch=1,EE,201273A8,extended,00000000
+//Alternative
+//patch=1,EE,001273A0,extended,24420000
+
 //This one is just for fun. Don't use it seriously. Changes gamemode ( 0-SP, 1-COOP, 2-DM, 3-Flag, 4-Pass the Bomb ). Remove "//" to use.
 //patch=1,EE,2036C380,byte,0
 
 //Enable single Deagle/Uzi
-patch=1,EE,20224B78,extended,00000000
+patch=1,EE,00224B74,extended,30420002
 
 //Controls the textures. When split screen, they are blurred ( 1 ), in single player they are sharp ( 0 ).
 patch=1,EE,20344344,byte,0
-//Alternative
-patch=1,EE,20273F38,extended,00000000
 
 //Pickup effects
-patch=1,EE,20241954,extended,00000000
+patch=1,EE,00241914,extended,8C64C350
 
-//Ammo fix in coop
-patch=1,EE,20275B68,extended,00000000
+//SP spawns in COOP
+//patch=1,EE,00275B8C,extended,2406006F
 
 //Medals in coop mode
-patch=1,EE,20271AA0,extended,00000000
-patch=1,EE,20270F88,extended,00000000
+patch=1,EE,00270F84,extended,8C43C350
+patch=1,EE,00271A90,extended,8C43C350
 
 //Removes letterbox on cutscenes
 patch=1,EE,2068D9DC,extended,00000000
@@ -36,7 +39,8 @@ patch=1,EE,2069496C,byte,1
 patch=1,EE,2068431C,byte,1
 
 //Makes cool loading screen.
-patch=1,EE,203A79A7,short,00
+patch=1,EE,203A79A4,extended,00676E69
+patch=1,EE,003A79A8,extended,00000000
 
 //Replaces SamLogo video with Gotham games.
 patch=1,EE,203BE840,extended,68746F47
