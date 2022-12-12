@@ -6,6 +6,7 @@ Use a Notepad or some text editor and open up .pnach file with it.
 # .pnach files with game version:
 - 0DDA2728 - Public Beta 2
 - 27E54B37 - Europe/PAL
+- 2FFA7E6F - Jampack Demo
 - 3676E74C - Korean/NTSC
 - C909A32E - Public Beta 1
 - D5605611 - USA/NTSC
