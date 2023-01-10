@@ -25,14 +25,20 @@ patch=1,EE,00248764,extended,24510005
 
 // CHEATS
 
+//Plant infinite C4s on B2
+patch=1,EE,203D9880,extended,00000000
+
+//Write Par Time with minimum objectives completed
+patch=1,EE,20335B34,extended,64140001
+
 //Open weapons
 patch=1,EE,20332B5C,extended,00000000
 
 //Unlock all levels
-//patch=1,EE,20333020,extended,2002FFFF
+patch=1,EE,20333020,extended,2002FFFF
 
 //Invisible
-//patch=1,EE,2016CA2C,extended,0805B37A
+patch=1,EE,2016CA2C,extended,0805B37A
 
 //Levitation code
 // Press L3 to activate; R3 to deactivate
@@ -61,20 +67,20 @@ patch=1,EE,200FFE14,extended,08067D23
 // FOR FUN!
 
 //Fix changing weapons on Kyrgzstan and Chechnya
-//patch=1,EE,203E1A84,extended,00000000
+patch=1,EE,203E1A84,extended,00000000
 
 //Enable all spawns
-//patch=1,EE,201B422C,extended,0C0F2708
+patch=1,EE,201B422C,extended,0C0F2708
 
 //Spawn on different location instead of enemy/friend
-//patch=1,EE,201C2098,extended,00000000
+patch=1,EE,201C2098,extended,00000000
 
 //Disable radio logs
 //You can hear "The First part of the mission is complete" on some missions where there are other lines
-//patch=1,EE,201C67D8,extended,10600003
+patch=1,EE,201C71A0,extended,00000000
 
 //Count kill as Collateral
-//patch=1,EE,20186FD8,extended,1040001F
+patch=1,EE,20186FD8,extended,1040001F
 
 //Toss Body instead of laying it down
 patch=1,EE,0024A254,extended,2402002D
