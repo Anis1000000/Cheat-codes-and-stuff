@@ -59,3 +59,16 @@ patch=1,EE,2068D694,byte,3
 patch=1,EE,2068D6E8,byte,3
 //Widescreen fix ( Default 0 ).
 patch=1,EE,2068D598,byte,1
+
+
+//Codes of Madness
+patch=1,EE,200FFFA8,extended,8C72DB84
+patch=1,EE,200FFFAC,extended,24020060
+patch=1,EE,200FFFB0,extended,16420002
+patch=1,EE,200FFFB4,extended,26520018
+patch=1,EE,200FFFB8,extended,24120000
+patch=1,EE,200FFFBC,extended,AC72DB84
+patch=1,EE,200FFFC0,extended,00721821
+patch=1,EE,200FFFC4,extended,2463DB88
+patch=1,EE,200FFFC8,extended,03E00008
+patch=1,EE,20112D44,extended,0C03FFEA
