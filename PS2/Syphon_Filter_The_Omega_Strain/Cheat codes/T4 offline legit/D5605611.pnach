@@ -17,7 +17,7 @@ patch=1,EE,2029722C,extended,0000102B
 
 //Enable Mission Setup & Join Mission offline
 patch=1,EE,2033C618,extended,00000000
-patch=1,EE,20442544,extended,64020001
+patch=1,EE,2033C620,extended,24020001
 //Begin Mission fix
 patch=1,EE,202A0FAC,extended,080A8437
 
