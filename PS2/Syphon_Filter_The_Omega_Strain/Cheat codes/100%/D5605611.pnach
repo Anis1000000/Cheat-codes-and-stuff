@@ -9,6 +9,11 @@ patch=1,EE,20333B58,extended,2401FFFF
 patch=1,EE,20333B5C,extended,AC410084
 patch=1,EE,20333B68,extended,24020001
 
+//Ratings
+patch=1,EE,20332EEC,extended,24010520
+patch=1,EE,20332EF0,extended,AC610008
+patch=1,EE,20332EF8,extended,24020001
+
 //All Solo Pars
 patch=1,EE,E011FFF6,extended,0055A35C
 patch=1,EE,20A82280,extended,0000028A
@@ -80,20 +85,3 @@ patch=1,EE,20A82434,extended,00000000
 patch=1,EE,20A82454,extended,00000000
 patch=1,EE,20A82474,extended,00000000
 patch=1,EE,20A82494,extended,00000000
-
-//Ratings
-//Kills
-patch=1,EE,D055A35C,extended,0000FFF6
-patch=1,EE,20A816F8,extended,00000514
-//Knife
-patch=1,EE,D055A35C,extended,0000FFF6
-patch=1,EE,20A816FC,extended,000001C2
-//Headshots
-patch=1,EE,D055A35C,extended,0000FFF6
-patch=1,EE,20A81700,extended,0000044C
-//Non-Lethal
-patch=1,EE,D055A35C,extended,0000FFF6
-patch=1,EE,20A81710,extended,0000015E
-//Grenades
-patch=1,EE,D055A35C,extended,0000FFF6
-patch=1,EE,20A81708,extended,000001F4
