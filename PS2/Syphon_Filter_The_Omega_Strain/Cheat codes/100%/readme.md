@@ -1,4 +1,4 @@
-# Cheat Codes for 100%. Press SELECT + START at any time to unlock all (Has to be after loading the agent).
+# Cheat Codes for 100%. Press SELECT + START at any time after loading an agent to get Par Times, No Deaths, No Collateral on all missions.
 ## CAREFUL !
 ### Some of them are for Ratings and Solo Pars so you might wanna remove them if you don't want it to mess with your Agent Profile.
 Use a Notepad or some text editor and open up .pnach file with it.
