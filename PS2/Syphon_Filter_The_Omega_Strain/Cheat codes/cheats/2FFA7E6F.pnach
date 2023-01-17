@@ -13,53 +13,60 @@ comment=by YukiXXL
 //60 FPS
 patch=1,EE,0022EA58,extended,2402003C
 
-//E3_BUILD=1 (PS2-20771EF0 313D444C)
-patch=1,EE,20771EF3,byte,31
+//BOOT_FRONTEND=1
+patch=1,EE,107720E8,extended,0A0D313D
 
-//BOOT_FRONTEND=1 (PS2-107720A8 0A0D313D)
-patch=1,EE,207720A9,byte,31
+//SetInvulnerable to 1 after closing map
+patch=1,EE,202C36DC,extended,24050001
 
-//BOOT_INVULNERABLE=1
-//patch=1,EE,207720D0,byte,31
-
-//USE_VALID_LEVELS=1
-//patch=1,EE,20771FBC,byte,31
-
-//SEQUENTIAL_LEVELS=1
-//patch=1,EE,20771F08,byte,31
-
-//RESTRICT_LEVELS=1
-//patch=1,EE,20771F1B,byte,31
-
-//LAN
-patch=1,EE,20316038,extended,8C2408C0
-
-//debug=1
-//patch=1,EE,203B711E,byte,31
+//LAN button
+patch=1,EE,2031604C,extended,00000000
 
 //Greyed buttons
-patch=1,EE,203139F0,extended,8C240848
-patch=1,EE,20313A1C,extended,8C240858
-patch=1,EE,20313A4C,extended,8C240860
-patch=1,EE,20313A7C,extended,8C240868
-patch=1,EE,20313AAC,extended,8C240870
-patch=1,EE,20313ADC,extended,8C240878
-patch=1,EE,20313B0C,extended,8C240880
-patch=1,EE,20313B3C,extended,8C240888
-patch=1,EE,20313B6C,extended,8C240890
-patch=1,EE,20313B9C,extended,8C240898
+patch=1,EE,203139F0,extended,00000000
+patch=1,EE,20313A1C,extended,00000000
+patch=1,EE,20313A4C,extended,00000000
+patch=1,EE,20313A7C,extended,00000000
+patch=1,EE,20313AAC,extended,00000000
+patch=1,EE,20313ADC,extended,00000000
+patch=1,EE,20313B0C,extended,00000000
+patch=1,EE,20313B3C,extended,00000000
+patch=1,EE,20313B6C,extended,00000000
+patch=1,EE,20313B9C,extended,00000000
 
-//Join mission
-patch=1,EE,2031342C,extended,8C240850
+//New Agent Changes
+//Change Game Type in Create Mission
+//Single = Enable
+patch=1,EE,E0080001,extended,004D5ED4
+//Body Shape => Boot Style
+patch=1,EE,103B0694,extended,00000000
+//Skin Tone => Boot Color
+patch=1,EE,103B067C,extended,00000001
+//Face => Pants Style
+patch=1,EE,103B0680,extended,00000100
+//Face Shape => Pants Color
+patch=1,EE,103B0684,extended,00000101
+//Hair Style => Shirt Style
+patch=1,EE,103B0688,extended,00000B00
+//Hair Color => Shirt Color
+patch=1,EE,103B068C,extended,00000B01
+//Beard Style => Vest Style
+patch=1,EE,103B0698,extended,00000F00
+//Beard Color => Vest Color
+patch=1,EE,103B069C,extended,00000F01
+//Story = Disable
+patch=1,EE,E0080000,extended,004D5ED4
+patch=1,EE,103B0694,extended,00000004
+patch=1,EE,103B067C,extended,00000201
+patch=1,EE,103B0680,extended,0000080B
+patch=1,EE,103B0684,extended,00000805
+patch=1,EE,103B0688,extended,00000A06
+patch=1,EE,103B068C,extended,00000A01
+patch=1,EE,103B0698,extended,00000907
+patch=1,EE,103B069C,extended,00000908
 
-//Replace Mission Setup with Agent Modify
-patch=1,EE,203CB290,extended,41697547
-patch=1,EE,203CB294,extended,746E6567
-patch=1,EE,203CB298,extended,69646F4D
-patch=1,EE,203CB29C,extended,00007966
-
-patch=1,EE,203CB2A0,extended,4E454741
-patch=1,EE,203CB2A4,extended,444F4D54
+//Create Mission and Join Mission fix
+patch=1,EE,20230E14,extended,1000002E
 
 //Fake Byte
 patch=1,EE,004301BC,byte,1
